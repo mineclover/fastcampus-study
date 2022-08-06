@@ -1,0 +1,38 @@
+p{
+  margin: 4px;
+}
+  
+div{
+  border-width: 1px;
+  border-style: dashed;
+  margin: 10px;
+  padding: 10px;
+}
+
+section{
+  border-width: 2px;
+  border-style: solid;
+  margin: 10px;
+  padding: 10px;
+}
+pre{
+  
+  padding: 10px;
+  background-color: azure;
+  border-radius: 10px;
+  
+  
+}
+code{
+  
+  padding: 5px;
+  color: brown;
+  background-color: rgb(241, 241, 241);
+  border-radius: 3px;
+  
+  
+}
+  
+p:hover{
+  background-color: blanchedalmond;
+}
