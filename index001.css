@@ -1,6 +1,16 @@
 p{
   margin: 4px;
+  padding-left: 30px;
 }
+p#mark_test{
+  color: black;
+}
+
+
+div p {
+  color: rgb(255, 53, 53);
+}
+
   
 div{
   border-width: 1px;
@@ -18,8 +28,17 @@ section{
 pre{
   
   padding: 10px;
-  background-color: azure;
+  padding-top: 20px;
+  margin-right: 300px;
+  background-color: rgb(237, 241, 194);
   border-radius: 10px;
+
+  /*박스에 테두리 긋기*/
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(124, 91, 51);
+
+  
   
   
 }
@@ -35,4 +54,9 @@ code{
   
 p:hover{
   background-color: blanchedalmond;
+}
+
+#mark_a{
+  color: #dae6ff;
+  background-color: black;
 }

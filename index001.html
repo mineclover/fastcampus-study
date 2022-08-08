@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index000.css">
+  <link rel="stylesheet" href="index001.css">
 
   <title>HTML 기본 문서 구현</title>
 </head>
@@ -14,17 +14,35 @@
   <section>
     <h2>기타 태그 확인하기 ( 이미지, 테이블, 하이퍼링크)</h2>
     <div>
-      <h3>기타 텍스트 관련 참고 서류 / 
-        네비게이션을 만드는데 필요한 것
+      <h3>하이라이트 태그 <code>&lt;mark></code>
       </h3>
-      <p><mark>&lt;macrk></mark></p>
+      <p><mark>하이라이팅 &lt;mark></mark></p>
       &lt;Mark></p>
+      <p><mark id="mark_a">스타일 수정 가능</mark></p>
+      <mark id="mark_a"><p id="mark_test">태그 순서에 따라 스타일 부여되는게 달라진다</p></mark>
+      <p>윗 글 작성하면서 아이디부여를 했는데 p자식인 아이디 지정이 까다로웠다</p>
+      <p>p#mark_test 라고 작성해야한다. <mark>까다로웠던 부분은 p#을 붙여쓰는 것.. 띄어쓰면 작동안한다 ㅎ</mark></p>
+      <p>백그라운드가 하이라이팅 컬러 , color는 텍스트 컬러</p>
+      <pre>
+        &lt;!--mark로 텍스트를 바로 감싸주는게 좋다
+        태그까지 같이 감싸면 스타일 누락된다 -->
+
+        &lt;p>&lt;mark>하이라이트 할 문단&lt;/mark>&lt;/p>
+      </pre>
 
     </div>
     <div>
-      <h3>부제목 태그<code>&lt;h2></code></h3>
-
-
+      <h3>위 첨자, 아래 첨자<code>&lt;sub>, &lt;sup></code></h3>
+      <p>윗 첨자<sup>위위위</sup></p>
+      <p>윗 첨자<sub>아래아래</sub></p>
+    </div>
+    <div>
+      <h3>취소선과 CSS 테스트 </h3>
+      <p><s>
+        취소선 테스트
+      </s></p>
+      <p><div>p 안에 div 넣으면?</div></p>
+      <p>이건 조금 판정이 신기한데..</p>
     </div>
   </section>
 
