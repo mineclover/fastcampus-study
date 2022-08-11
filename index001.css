@@ -1,16 +1,23 @@
 p{
   margin: 4px;
-  padding-left: 30px;
+  padding-left: 20px;
+}
+a{
+  margin: 4px;
+  padding-left: 40px;
 }
 p#mark_test{
   color: black;
 }
 
 
-div p {
+p div {
   color: rgb(255, 53, 53);
 }
 
+div span{
+  color: rgb(57, 83, 77);
+}
   
 div{
   border-width: 1px;
