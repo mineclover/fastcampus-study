@@ -1,8 +1,15 @@
+table { border-collapse: collapse; }
+    th, td { border: 1px solid black; padding: 8px; }
+
+
 p{
   margin: 4px;
   padding-left: 20px;
 }
-a.button{
+
+
+
+.button{
   margin: 10px;
   margin-left: 40px;
   padding: 5px;
@@ -21,11 +28,12 @@ a.button{
 
 }
 
-a.button:hover {
+.button:hover {
   background-color: rgb(71, 187, 255);
   transition-duration: 0.5s;
   
 }
+
 
 @counter-style cs-alphabetic {
   system: alphabetic;
