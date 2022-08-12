@@ -1,0 +1,105 @@
+p{
+  margin: 4px;
+  padding-left: 20px;
+}
+a.button{
+  margin: 10px;
+  margin-left: 40px;
+  padding: 5px;
+  padding-left: 12px;
+  
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 0px;
+
+  background-color: rgb(64, 118, 233);
+  color:white;
+  font-weight: bold;
+  text-decoration-line: none;
+  /*https://hianna.tistory.com/474*/
+  transition-duration: 0.5s;
+
+}
+
+a.button:hover {
+  background-color: rgb(71, 187, 255);
+  transition-duration: 0.5s;
+  
+}
+
+@counter-style cs-alphabetic {
+  system: alphabetic;
+  symbols: 💕 😂 🤣 😍 ✌;
+  suffix: " ";
+}
+
+ul {
+  list-style: cs-alphabetic;
+}
+
+li{
+  padding-left: 20px;
+  list-style-type: cs-alphabetic;
+}
+
+p#mark_test{
+  color: black;
+}
+
+
+p div {
+  color: rgb(255, 53, 53);
+}
+
+div span{
+  color: rgb(57, 83, 77);
+}
+  
+div{
+  border-width: 1px;
+  border-style: dashed;
+  margin: 10px;
+  padding: 10px;
+}
+
+section{
+  border-width: 2px;
+  border-style: solid;
+  margin: 10px;
+  padding: 10px;
+}
+pre{
+  
+  padding: 10px;
+  padding-top: 20px;
+  margin-right: 300px;
+  background-color: rgb(237, 241, 194);
+  border-radius: 10px;
+
+  /*박스에 테두리 긋기*/
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(124, 91, 51);
+
+  
+  
+  
+}
+code{
+  
+  padding: 5px;
+  color: brown;
+  background-color: rgb(241, 241, 241);
+  border-radius: 3px;
+  
+  
+}
+  
+p:hover{
+  background-color: blanchedalmond;
+}
+
+#mark_a{
+  color: #dae6ff;
+  background-color: black;
+}

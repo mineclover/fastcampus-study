@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index002.css">
+
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+  <title>중첩태그 활용하기</title>
+</head>
+<body>
+  <h1>05. 06. HTML 중첩되는 태그 내용</h1>
+  <p>이미 이 문서를 작성하는 것이 중첩태그의 응용이다</p>
+  <section>
+    <h2>목록 태그</h2>
+    
+    <a class="button" href="http://127.0.0.1:5500/%EC%8B%A4%EC%8A%B5%EC%BD%94%EB%93%9C/02_03/list-lecture.html">
+      실습 예제
+      <i class="fas fa-angle-right"></i>
+    </a>
+    <span>주소가 로컬 주소 기반이기 때문에 링크 들어가고 새로고침하면 된다</span>
+    <p>코딩을 실시간으로 보고 싶은 html은 go live로 열고 나머지는 새로고침</p>
+    <div>
+      <h3>리스트 <code>&lt;ul></code> : unordered list
+      </h3>
+      <p>ul 다음 li, ol 다음 li을 사용한다</p>
+      <p>li은 요소고 ul,ol 은 리스트의 형식이라고 보면 좋을 듯</p>
+    <div>
+    <ul>
+      <li>li만 쓴 것</li>
+      <li>여러 줄 <br/>가능하다 근데 스타일 너무 깨진다</li>
+      
+      <li>구분하려고 pre썻었는데 총체적 난국이라 div로 수정함</li>
+        <ul>
+          <li>엔터도 적용되서 코드 가독성 챙기면 렌더링 가독성 깨진다</li>
+          <li>pre태그는 코드블럭용도의 태그로 묶어서 보여주기 적합한 태그가 아니다</li>
+        </ul>
+      <li>우연하게 p태그에 마진 준거랑 텍스트 위치가 같게 되서 수정했다 (20px)</li>
+      <li>깊이를 려면 연속사용 되는 태그를 묶어준다 <code>&lt;ol,ul></code></li>
+      <ol>
+        <li>css로 범위 지정을 잘 하면 되는 식으로 변경되었음</li>
+      </ol>
+      <ol>ol 태그
+        <li>li가 요소기 때문에 나머지만 쓰는 건 의미가 없다</li>
+        <li>검사 열어보면 나오는데 ui,ol 도 그냥 태그일 뿐이다!</li>
+        <p>패딩 차이가 있을 뿐임 li는 패딩 자리에 아이콘이 들어간다</p>
+        <ol>은 그루핑 목적이 강하다 div에 패딩 준 거랑 사실 상 거의 같다, 선언된 속성은 다르겠지만</ol>
+      </ol>
+      <ul>ul 태그</ul>
+      <p>그냥 p 태그 </p>
+    </ul>
+    </div>
+    <p>type에 대한 것은 최신 문법이 있음으로 생략하였음</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type">MDN 설명</a>
+    <p>필요한 것만 요약하자면, css로 tpye 수정하게 됬다</p>
+    <p>커스텀 가능하고, svg를 넣어 만들수도 있다</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style">카운터 스타일</a>
+    <br>
+    <a href="https://mdn.github.io/css-examples/counter-style-demo/">카운터 스타일 데모</a>
+    </div>
+    <div>
+      <h3>리스트 <code>&lt;ol,ul></code>
+      </h3>
+      <p>스타일 부여가 생김에 따라 ol,ul 구분이 무의미해졌다</p>
+      <p>li은 요소고 ul,ol은 깊이 부여할 때 선택해서 사용하면 될 듯 하다</p>
+      <p>리스트 랑 리스트 선택 시 그 부분만 아이콘 나오게 하고 싶다</p>
+    </div>
+    
+  </section>
+
+  
+  <section>
+    <h3>table <code>&lt;table></code> : 표 시작 태그</h3>
+    <a target="_blank" class="button" href="http://127.0.0.1:5500/실습코드\02_03\table-complete.html">
+      실습 예제2
+      <i class="fas fa-angle-right"></i>
+    </a>
+    <p>CSS 적용 안하면 아무것도 안보인다</p>
+    <div>
+      <table>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+        </tr>
+        <tr>
+          <td>요</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+
+
+</body>
+</html>
