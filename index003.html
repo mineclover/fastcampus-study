@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index003.css">
+  
+
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+  <title>inline, block, inline-block</title>
+</head>
+<body>
+  <h1>07. 인라인 요소와 블럭 요소</h1>
+  <p>인라인은 텍스트 호환성이 있는 요소, 블럭은 없는 요소 인듯</p>
+  <section>
+    <div>
+    <h2>인라인 태그</h2>
+    <p>가장 대표적인 예, span</p>
+    ㅎㅎ<span>span는 줄바꿈을 강제하지 않아 텍스트 태그로 사용했었음</span>
+    <p>여백 설정 불가는 아닌 거 같은데 쓰면 잘못 쓰고 있는거다</p>
+
+    <a class="button" href="
+    obsidian://open?vault=CSS_Repo&file=fastcampus%20%EC%9B%B9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EA%B8%B0%EC%B4%88%20%EA%B5%90%EC%9E%AC%2F02-html%2F07.%20HTML%20%EC%9D%B8%EB%9D%BC%EC%9D%B8%20%EC%9A%94%EC%86%8C%EC%99%80%20%EB%B8%94%EB%9F%AD%20%EC%9A%94%EC%86%8C%2F07.%20HTML%20%EC%9D%B8%EB%9D%BC%EC%9D%B8%20%EC%9A%94%EC%86%8C%EC%99%80%20%EB%B8%94%EB%9F%AD%20%EC%9A%94%EC%86%8C
+    "
+    >테스트, 프로토콜 실습 노트 <i class="fas fa-angle-right"></i></a>
+  
+    
+
+
+    
+    <a target="_blank" class="button" href="http://127.0.0.1:5500/실습코드/02_07/in-vs-block.html">
+      실습 예제
+      <i class="fas fa-angle-right"></i>
+    </a>
+    <br>
+    <p>우선 인라인 태그에도 패딩, 마진, 부여 된다</p>
+    <p>하지만 다 부여되진 않는다 원하는 동작을 하지 않을 때가 많다</p>
+    <p> 스타일 부여된 a의 텍스트가 자동 줄바꿈 됬을 때 어떻게 쪼개지는지 해당 내용 포스팅 한 것에서 볼 수 있다 </p>
+    <p>또 a 태그를 마진으로 조절하려해봤는데 마진으론 글자 간격이 조절이 안된다 ( line-height 임 )</p>
+    <a target="_blank" class="button" href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=blackboys20&logNo=221464005493">
+      line-height 설명 블로그
+      <i class="fas fa-angle-right"></i>
+    </a>
+    
+
+    
+</div>
+  </section>
+  
+  <h1>08. 시맨틱 요소(태그)</h1>
+  <section>
+    <div>
+      <h2>구획을 나누는 다양한 태그들을 사용해보자</h2>
+
+      <a target="_blank" class="button" href="http://127.0.0.1:5500/실습코드/02_08/Portfolio-lecture.html">
+        실습 예제
+        <i class="fas fa-angle-right"></i>
+      </a>
+      <p>예제는 div로만 제작되있다 시맨틱 태그로 변경해보자</p>
+      <p>예제에서 스타일시트는 reset.css를 베이스로 제작되어 있다</p>
+      <p>정렬이 좀 다르지만 확신하는 이유는 reset.css의 설정 값은 다 포함되있기 때문</p>
+      <a target="_blank" class="button" href="https://meyerweb.com/eric/tools/css/reset/">
+        reset.css
+        <i class="fas fa-angle-right"></i>
+      </a>
+      <p>리셋 비슷한 걸로는 normalize 가 있다</p>
+  <a target="_blank" class="button" href="http://designbase.co.kr/webcoding-10/">
+    #10 스타일 초기화를 위한 Reset.css & Normalize.css – 웹 코딩 강좌
+        <i class="fas fa-angle-right"></i>
+      </a>
+      
+      <p>문서에 적용해봤다 아.. h1이랑 나머지도 다 변경됬다</p>
+      <p>모든 걸 p 태그로 묶어서 쓰고 있지만 그냥 써도 되긴 한다</p>
+      <p>태그에 묶어서 쓰는 이유는 그래야 관리가 쉽기 때문이다</p>
+
+      <p>레이아웃을 시맨틱 태그로 묶어서 쓰는 것과 같은 이유</p>
+      <p>h1~h6이 시각적으로 차이가 없어졌더라도 h1에서 h6은 html 상으로</p>
+      <p>문서의 내용을 구분해준다</p>
+    </div>
+    <div>
+      <h2>자주 쓰는 시맨틱 태그</h2>
+      <p>실습자료와 교재로 공부하였음</p>
+      <a href=""></a>
+      <p>개인적으로.. 태그를 바꾸면 스타일도 바뀌게 적용되게 해주면 좋은 교보재였을 듯 하다</p>
+      <p>태그 자식의 클래스로 css 선택해두면 적용 가능하니..</p>      
+      <p></p>
+    </div>
+  </section>
+  
+
+</body>
+</html>
+
