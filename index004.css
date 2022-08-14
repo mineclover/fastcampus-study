@@ -1,0 +1,80 @@
+article {
+  border-width: 2px;
+  border-style: solid;
+  border-color:  rgb(252, 200, 252);
+  padding: 8px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+code{
+  
+  padding: 5px;
+  color: brown;
+  background-color: rgb(241, 241, 241);
+  border-radius: 3px;  
+}
+
+section{
+
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(98, 128, 45);
+
+  padding: 8px;
+}
+
+label {
+  font-weight: bold;
+
+}
+
+label:hover {
+  border-style: solid;
+  border-width: 1px;
+}
+
+div {
+  border-width: 2px;
+  border-style: solid;
+  border-color:  rgb(252, 238, 200);
+  padding: 8px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+s {
+  font-size: 12px;
+}
+
+.button{
+  line-height: 300%;
+  padding: 8px;
+
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 0px;
+
+  background-color: rgb(64, 118, 233);
+  color:white;
+  font-weight: bold;
+  /* 밑줄 제거 */
+  text-decoration-line: none;
+  /*https://hianna.tistory.com/474*/
+  transition-duration: 0.5s;
+
+}
+
+.button:hover {
+  background-color: rgb(71, 187, 255);
+  transition-duration: 0.5s;
+  
+}

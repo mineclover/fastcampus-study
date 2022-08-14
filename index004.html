@@ -10,13 +10,170 @@
 
   <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
-  <title>inline, block, inline-block 과 시맨틱 요소</title>
+  <title>form 사용해보기</title>
 </head>
 <body>
   <header></header>
   <aside></aside>
-  <main></main>
+  <main>
+    <h1>입력창 <code>&lt;form></code> 사용해보기</h1>
+    <a target="_blank" class="button" href="실습코드/02_09/form-complete.html">
+      실습 페이지
+      <i class="fas fa-angle-right"></i>
+    </a>
+    <section>
+
+      <s>갑자기 라벨하는데 이해가 안되서 누워서 잤다</s>
+
+      <h2>label 이해하기</h2>
+      <p>라벨로 선택되는 영역에 <code>headings</code>와 <code>a</code> 를 사용하지 않는다</p>
+      <p>라벨에서 사용하는 for 는 id만 된다 애초에 id가 그런 목적에 더 가깝다</p>
+      
+
+      <a target="_blank" class="button" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label">
+        MDN label 설명 페이지
+        <i class="fas fa-angle-right"></i>
+      </a>
+      <a target="_blank" class="button" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input ">
+        type list : MDN input type 설명 페이지
+        <i class="fas fa-angle-right"></i>
+      </a>
+      
+      <div>
+        <h2>(for, id) 크롬 자동완성</h2>
+        <label for="A"> 라벨 (input A) </label>
+        <input id="A" type="text">
+        참고로 라벨이 멀리 있어도 괜찮고 여러개 있어도 된다
+        <label for="A"> A 바로가기 </label>
+        <br>
+        <label for="B">비밀번호 (input A)</label>
+        <input id="B" type="password">
+        <p>라벨과 인풋 모두 인라인이여서 줄바꿈 해줘야한다</p>
+        <p>password의 경우 크롬과 연동되어 비밀번호를 저장하는데 이 때 저장된 것이
+          <br> 입력된 위치 A , B에서는 비밀번호 자동입력이 바로 되고 A, C에서는 선택지를 제공한다
+        </p>
+        <br>
+        <b><p>크롬 자동완성 호환되게 입력창 만들고 싶은데 모른다</p></b>
+        
+      </div>
+      <div>
+        <h2>placeholder, maxlength</h2>
+        <br>
+        <label for="C">비밀번호 (input C)</label>
+        <input id="C" type="password" placeholder="비밀번호 6자리" maxlength="6">
+        <br>
+        
+
+        
+      </div>
+      <div>
+        <h2>radio</h2>
+        <br>
+        <label for="AA">같은</label>
+        <input id="AA" type="radio" name="test">
+        <label for="BB">name</label>
+        <input id="BB" type="radio" name="test" checked>
+        <label for="CC">지정</label>
+        <input id="CC" type="radio" name="test">
+        <p>같은 name을 지정한 input radio는 하나만 선택된다</p>
+        <p>만약 input의 id가 똑같은게 여러개 있다면, 더 위에 써진 인풋인 선택된다</p>
+        <label for="CC">예시</label>
+        <input id="CC" type="radio" name="test">
+      </div>
+
+      <div>
+        <h2>File 입력</h2>
+        <label for="ip-file">예시</label>
+        <input id="ip-file" type="file" name="test" multiple>
+        <p>여러개의 파일은 multiple 을 입력한다</p>
+        
+      </div>
+      <article>
+        <h2> 선택창 <code>&lt;select> - &lt;option></code></h2>
+        <br>
+        <label for="sel-list">선택지</label>
+        <br>
+        <select id="sel-list">
+          <option value="apl">사과</option>
+          <option value="mel">멜론</option>
+          <option value="bnn">바나나</option>
+          
+
+        </select>
+      </article>
+
+      <article>
+        <h2> textarea <code>&lt;textarea></code></h2>
+        
+        <label for="intro">소개</label>
+        <br>
+        
+
+        <textarea id="intro" placeholder="입력해주세요" cols="40" rows="10"></textarea> 
+        <p>텍스트 에리어 >< 안에 쓴 게 미리 입력된다</p>
+        <p>글자의 갯수를 단위, 크기를 규격으로 높이 <code>&lt;... rows=""></code></p>
+        <p>너비를 받는다 (숫자 영어는 1글자, 한글은 2글자 취급)<code>&lt;... cols=""></code></p>
+        <p>cols 1 은 3글자, rows 1은 1글자를 받음</p>
+        <p>크기가 조절이 되고, 크기 만큼 글자를 받는다 , 자동 줄바꿈</p>
+        <p>크기조절 활성화 여부는 css 에서 조절한다 `resize:` </p>
+        
+        <p>설명서에 있는 것 말고도 다양한 태그가 있다 ( 줄바꿈 방식, form 제출 제한 )</p>
+        <a target="_blank" class="button" 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">
+          MDN textarea
+          <i class="fas fa-angle-right"></i>
+        </a>
+      </article> 
+
+    </section>
+    <section>
+      <article>
+        <h2>form 과 버튼 <code>&lt;form></code></h2>
+        <br>
+        <p>해당 과정에서는 form의 GET, POST를 깊게 안다룬다</p>
+
+        <a target="_blank" class="button" 
+        href="https://www.codingfactory.net/11576">
+          form 예제
+          <i class="fas fa-angle-right"></i>
+        </a>
+      </article>
+      <div>
+      <form>
+        <label for="buttt">버튼으로 가기
+        </label>
+        <p>원래는 form으로 묶인 것들이 submit으로 처리되는 걸로 알고있다</p>
+        <button id="buttt" name="favorite" value="10">
+        Add to favorites
+        </button> 
+
+        <p>라벨로 버튼을 누르면 작동한다 그건 tpye를 설정하지 않아서</p>
+        <p>버튼을 누를 때 ?favorite= 링크로 이동해서 그렇다</p>
+        <p>name은 값 이름을, value는 값을</p>
+        <p>그건 의도치 않은 동작에가까우니 type="button" 을 넣는게 맞다</p>
+      
+      <button id="butt" type="button">제출</button>
+      <button type="button" disabled>취소</button>
+      </form>
+    </div>
+    </section>
+
+
+
+
+
+  </main>
   <footer></footer>
-  
+<!-- 
+  <article>
+    <h2>제목 <code>&lt;></code></h2>
+    <a target="_blank" class="button" 
+    href="#">
+      링크
+      <i class="fas fa-angle-right"></i>
+    </a>
+  </article> 
+-->
 </body>
 </html>
+
