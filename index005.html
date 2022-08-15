@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index005.css">
+  
+
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+  <title>CSS 선택자사용해보기</title>
+</head>
+<body>
+  <header>
+    <h1>CSS가 원하는 요소에 스타일을 부여하기 위해 요소를 선택하는 과정</h1>
+  </header>
+  <aside></aside>
+  <main>
+    <p><span>CSS 태그 선택자</span></p>
+    <div>태그 선택자는 그냥 html 태그만 적어도 된다</div>
+
+    <hr>
+    <h1 class="important">클래스 선택자</h1>
+    <ul>
+      <li class="important">여러개 부여할 수 있고</li>
+      <li class="finished">같거나,다르게 부여할 수 있고</li>
+      <li>마트 장보기</li>
+      <li class="finished">내부로 강제 이식할 수 이다><li>
+      <li class="finished important">앞에 .을 붙이면 클래스</li>
+    </ul>
+
+    <br>
+    <p>한 태그가 여러 클래스를 가질 수 있다</p>
+
+
+<h1>id 선택자</h1>
+  <section id="intro">
+    아이디 선택자는 하나의 요소에만(갯수를 최소한으로) 적용되게 한다
+
+  </section>
+  <section id="board">
+    #으로 선택한다
+  </section>
+
+<h1>속성 값으로 선택하기</h1>
+  
+  <label for="ip-id">속성 값으로 선택하기</label>
+  <input id="ip-id" type="text"/>
+  <br>
+  <label for="ip-pw">[속성이름=속성값]</label>
+  <input id="ip-pw" type="password"/>
+  <br>
+  <label for="ip-nm">쌍따옴표 없이 쓴다</label>
+  <input id="ip-nm" type="text"/>
+  <p>참고로 border-color가 설정되지 않은 상태로 ~style이 활성화되면 color를 받아간다</p>
+  <p style="color:Red;">지정한 속성과 "완전히(띄어쓰기까지)" 동일 할 때 스타일 부여됨(구분자"제외인듯하다)</p>
+  <p>인라인만되고 css는 안됨</p>
+
+  <h1>자손과 자식 선택자</h1>
+  <p>자손은 띄어쓰기, 자식은 >를 써서 한다 컴파일러는 애매한 걸 싫어한다</p>
+  <p>자손이나 자식을 찾는게 아닐 때 클래스나 아이디를 찾으려면 붙여 써라</p>
+  <p> ~태그.클래스, ~태그#아이디 </p>
+  <div class="outer">
+    <p>자손</p>
+    <div>
+      <p>자손</p>
+      <div>
+        <div><p>자손</p></div>
+      </div>
+    </div>
+    <div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <h1>형제 선택자</h1> 
+  <section class="bro">
+    <div>스타일 안겹치게 하려고 bro div 를 썻는데</div>
+    <div>이게 일반 클래스보단 우선순위가 더 높다</div>
+    <div class="selected">선택된 줄</div>
+    <div>마찬가지로 .selected 보다 .bro div 가 우선순위가 높아서 적용이 안됬었고</div>
+        <div>.bro 자식으로 .selected 로 포함 시켜서 살았다</div>
+
+  </section>
+
+  <h1>전체 선택자</h1>
+  <p>자식을 선택하려면 띄워쓰기는 구분자로도 쓰인다</p>
+
+  <section class="alli">
+    <h1>제목</h1>
+    <span>span 요소</span>
+    <div>
+      요소
+      <div>더 안쪽 요소</div>
+    </div>
+    일반 텍스트
+  </section>
+
+
+
+  <h1 class="underline">부정 가상 클래스 사용예</h1>
+  <ul>
+    <li>특성 없음</li>
+    <li class="blue">파랑글씨</li>
+    <li class="blue underline">파랑글씨에 및줄</li>
+    <li class="underline">파랑글씨는 아닌데 및줄</li>
+    <li>inherit은 초기화 (기본값)</li>
+  </ul>
+<hr>
+  <h1>순서 명시 선택자</h1>
+  <p>even 짝수, odd 홀수</p>
+  <p>3n+1은 1차 방정식</p>
+  <ul>
+    <li>첫번째 글</li>
+    <li>두번째 글</li>
+    <li>세번째 글</li>
+    <li>네번째 글</li>
+    <li>다섯번째 글</li>
+    <li>여섯번째 글</li>
+    <li>일곱번째 글</li>
+    <li>여덟번째 글</li>
+  </ul>
+
+  <h1>마우스오버 가상클래스</h1>
+  <p></p>
+  <section class="mous">
+  <button class="blue-button">
+    클릭
+  </button>
+
+  <br><br>
+  
+  <div>
+    파일
+    <ul>
+      <li>저장</li>
+      <li>열기</li>
+      <li>닫기</li>
+    </ul>
+  </div>
+
+</section>
+
+  </main>
+  <footer></footer>
+<!-- 
+  <article>
+    <h2>제목 <code>&lt;></code></h2>
+    <a target="_blank" class="button" 
+    href="#">
+      링크
+      <i class="fas fa-angle-right"></i>
+    </a>
+  </article> 
+-->
+</body>
+</html>
+
