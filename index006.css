@@ -1,0 +1,155 @@
+section {
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 2px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 200%;
+}
+
+
+section .폰트{
+  font-size: 32px;
+  font-family: Bebas Neue Regular, 궁서;
+  color: blue;
+  
+}
+
+div.px{
+
+  width: fit-content;
+  font-size: 24px;
+  border-style: dashed;
+  border-width: 1px;
+}
+
+div.em{
+
+  width: fit-content;
+  font-size: 1.5em;
+  border-style: dashed;
+  border-width: 1px;
+  color:blue;
+}
+
+div.rem{
+
+  width: fit-content;
+  font-size: 1.5rem;
+  border-style: dashed;
+  border-width: 1px;
+  color: red;
+}
+section.font-size{
+  font-size: 10px;
+}
+h2 {
+  font-size: 20px;
+}
+
+.에스코어 {
+  font-family: My에스코어;
+}
+
+@font-face {
+  font-family: "My에스코어";
+  src: local("에스코어 드림 1 Thin");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "My에스코어";
+  src: local("에스코어 드림 2 ExtraLight");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "My에스코어";
+  src: local("에스코어 드림 3 Light");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "My에스코어";
+  src: local("에스코어 드림 4 Regular");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "My에스코어";
+  src: local("에스코어 드림 5 Medium");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "My에스코어";
+  src: local("에스코어 드림 6 Bold");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "My에스코어";
+  src: local("에스코어 드림 7 ExtraBold");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "My에스코어";
+  src: local("에스코어 드림 8 Heavy");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "My에스코어";
+  src: local("에스코어 드림 9 Black");
+  font-weight: 900;
+}
+
+section.font-style span{
+  color: blue;
+}
+
+.obliq {
+  font-style: oblique 90deg;
+}
+
+.none { text-decoration: none; }
+.underline { text-decoration: underline; }
+.overline { text-decoration: overline; }
+.line-through { text-decoration: line-through; }
+
+
+.p-spacing{
+  font-size: 1px;
+  letter-spacing: 1em;
+}
+
+section.align p.one{
+  text-align: left;
+  font-size: 10px;
+  line-height: 12px;
+}
+section.align p.two{
+  text-align: center;
+  font-size: 10px;
+  line-height: 2;
+}
+section.align p.three{
+  text-align: right;
+  font-size: 10px;
+  line-height: 1.2em;
+}
+section.align p.four{
+  text-align: justify;
+  font-size: 10px;
+  line-height: 200%;
+}
+
+section.align div{
+  display: inline-block;
+  width: 40%;
+}
+
+section.ul ul{ 
+  list-style:none;
+  padding: 0;
+}
+
+
+

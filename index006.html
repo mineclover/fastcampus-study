@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index006.css">
+  
+
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+  <title>CSS 스타일 적용</title>
+</head>
+<body>
+  <header>
+    <h1>CSS가 부여할 수 있는 스타일 1</h1>
+    <section class="폰트">
+      <h1>폰트 적용 하기</h1>
+      <p class="폰트">The sound of mugic 테스트</p>
+      <p>여러 폰트를 지정할 수 있다. 폰트가 적용이 안될 때 뒤에 있는게 적용 된다</p>
+    </section>
+    <section class="font-size">
+      <h1>크기 단위</h1>
+      일반 텍스트
+      <h2>px</h2>
+      <div class="px">
+      <span>바깥쪽 span
+        <span>중간 span
+          <span>안쪽 span
+          </span>
+        </span>
+      </span>
+    </div>
+    <h2>em</h2>
+    <div class="em">
+      <span>바깥쪽 span
+        <span>중간 span
+          <span>안쪽 span
+          </span>
+        </span>
+      </span>
+    </div>
+    <h2>rem</h2>
+    <div class="rem">
+      <span>바깥쪽 span
+        <span>중간 span
+          <span>안쪽 span
+          </span>
+        </span>
+      </span>
+    </div>
+    
+    </section>    
+
+    <section>
+      <h1>제목</h1>
+      <span style="font-weight: 100;">100</span>
+      <div style="font-weight: 500;">
+        <span>500 짜리 일반 텍스트</span>
+        <span style="font-weight: bolder;">bolder</span>
+      </div>
+      <br>
+      <span style="font-weight: 200;">200</span>
+      <span style="font-weight: 300;">300</span>
+      <span style="font-weight: 400;">400</span>
+      <span style="font-weight: 500;">500</span>
+      <span style="font-weight: 600;">600</span>
+      <span style="font-weight: 700;">700</span>
+      <span style="font-weight: 800;">800</span>
+      <span style="font-weight: 900;">900</span>
+      <p>차이가 너무 없어서</p>
+    <div class="에스코어">
+      
+      <span style="font-weight: 100;  color:#ff0000;">꿈</span>
+      <span style="font-weight: 200;  color:#ff8000;">꿈</span>
+      <span style="font-weight: 300;  color:#ffff00;">꿈</span>
+      <span style="font-weight: 400;  color:#80ff00;">꿈</span>
+      <span style="font-weight: 500;  color:#00ff00;">꿈</span>
+      <span style="font-weight: 600;  color:#00ff80;">꿈</span>
+      <span style="font-weight: 700;  color:#00ffff;">꿈</span>
+      <span style="font-weight: 800;  color:#0080ff;">꿈</span>
+      <span style="font-weight: 900;  color:#0000ff;">꿈</span>
+      <br>
+      <span style="font-weight:Black;  color:#0000ff;">꿈</span>
+      <span style="font-weight:test;  color:#0000ff;">test</span>
+      <span style="font-weight:lighter;  color:#0000ff;">꿈</span>
+      <span style="font-weight:Bolder;  color:#0000ff;">꿈</span>
+      
+      
+      
+      <br>
+      
+      
+      <span style="font-weight: 100; position: absolute; color:#ff0000;">꿈ABC123</span>
+      <span style="font-weight: 200; position: absolute; color:#ff8000;">꿈ABC123</span>
+      <span style="font-weight: 300; position: absolute; color:#ffff00;">꿈ABC123</span>      
+      <br>
+      <span style="font-weight: 400; position: absolute; color:#80ff00;">꿈ABC123</span>
+      <span style="font-weight: 500; position: absolute; color:#00ff00;">꿈ABC123</span>
+      <span style="font-weight: 600; position: absolute; color:#00ff80;">꿈ABC123</span>
+      <br>
+      <span style="font-weight: 700; position: absolute; color:#00ffff;">꿈ABC123</span>
+      <span style="font-weight: 800; position: absolute; color:#0080ff;">꿈ABC123</span>
+      <span style="font-weight: 900; position: absolute; color:#0000ff;">꿈ABC123</span>
+      <br>
+    </div>
+    <span>테스트</span>
+    
+      
+    </section>
+
+    <section class="font-style">
+      <p>일반</p>
+      <p style="font-style:italic;"> italic : 폰트를 기울임</p>
+      <p class="obliq">oblique : 그래픽적인 기울임 값을 넣을 수 있다는데 차이가 없음 ㄷ</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-style#try_it">font-style MDN</a>
+      <h2>color</h2> 
+      일반 텍스트 <span>글자색 적용</span>
+      <p>color : #ff0000 = 레드</p>
+      <p>color : rgba(Red, Green, Blue, Alpha)</p>
+      <p>color : rgb(Red, Green, Blue)</p>
+    </section>
+    <section>
+      <h2>text-decoration</h2>
+    <span>일반 텍스트</span>
+    <a href="#">일반 a태그</a>
+    <a href="#" class="none">"a 태그에 none"</a>
+    <span class="underline">밑줄</span>
+    <span class="overline">윗줄</span>
+    <span class="line-through">취소선</span>
+  </section>
+  
+  <section class="spacing">
+
+
+    <h2>letter-spacing</h2>
+    <P>자간</P>
+    <p>단위를 em으로하면 글자 크기에 비례한 자간이 생긴다</p>
+    <p class="p-spacing">
+      Cascading Style Sheets(CSS)는 HTML이나 XML(SVG, XHTML 같은 XML 방언(dialect) 포함)로 작성된 문서의 표현을 기술하기 위해 쓰이는 스타일시트 언어입니다. CSS는 요소가 화면, 종이, 음성이나 다른 매체 상에 어떻게 렌더링되어야 하는지 기술합니다.<br>
+      CSS는 오픈 웹의 핵심 언어 중 하나이며 여러 브라우저가 표준으로 사용하는 W3C 명세가 있습니다. 레벨 단위로 개발한 CSS1은 더 이상 사용하지 않고, 다음 레벨인 CSS2.1은 권고안(recommendation)입니다. 더 작은 모듈로 나눈 CSS3은 표준화 과정을 밟고 있습니다.
+    </p>
+  </section>
+
+  <section class="align">
+    <h2>text-align : 정렬 , line-height : 행간</h2>
+    <div>
+      <h3>left , 12px</h3>
+    <p class="one">
+      Cascading Style Sheets(CSS)는 HTML이나 XML(SVG, XHTML 같은 XML 방언(dialect) 포함)로 작성된 문서의 표현을 기술하기 위해 쓰이는 스타일시트 언어입니다. CSS는 요소가 화면, 종이, 음성이나 다른 매체 상에 어떻게 렌더링되어야 하는지 기술합니다.<br>
+      CSS는 오픈 웹의 핵심 언어 중 하나이며 여러 브라우저가 표준으로 사용하는 W3C 명세가 있습니다. 레벨 단위로 개발한 CSS1은 더 이상 사용하지 않고, 다음 레벨인 CSS2.1은 권고안(recommendation)입니다. 더 작은 모듈로 나눈 CSS3은 표준화 과정을 밟고 있습니다.
+    </p>
+    <h3>center, 2 (배수)</h3>
+    <p class="two">
+      
+      Cascading Style Sheets(CSS)는 HTML이나 XML(SVG, XHTML 같은 XML 방언(dialect) 포함)로 작성된 문서의 표현을 기술하기 위해 쓰이는 스타일시트 언어입니다. CSS는 요소가 화면, 종이, 음성이나 다른 매체 상에 어떻게 렌더링되어야 하는지 기술합니다.<br>
+      CSS는 오픈 웹의 핵심 언어 중 하나이며 여러 브라우저가 표준으로 사용하는 W3C 명세가 있습니다. 레벨 단위로 개발한 CSS1은 더 이상 사용하지 않고, 다음 레벨인 CSS2.1은 권고안(recommendation)입니다. 더 작은 모듈로 나눈 CSS3은 표준화 과정을 밟고 있습니다.
+    </p>
+  </div>
+  <div>
+    <h3>right 1.2em</h3>
+    <p class="three">
+      Cascading Style Sheets(CSS)는 HTML이나 XML(SVG, XHTML 같은 XML 방언(dialect) 포함)로 작성된 문서의 표현을 기술하기 위해 쓰이는 스타일시트 언어입니다. CSS는 요소가 화면, 종이, 음성이나 다른 매체 상에 어떻게 렌더링되어야 하는지 기술합니다.<br>
+      CSS는 오픈 웹의 핵심 언어 중 하나이며 여러 브라우저가 표준으로 사용하는 W3C 명세가 있습니다. 레벨 단위로 개발한 CSS1은 더 이상 사용하지 않고, 다음 레벨인 CSS2.1은 권고안(recommendation)입니다. 더 작은 모듈로 나눈 CSS3은 표준화 과정을 밟고 있습니다.
+    </p>
+
+    <h3>justify 200%</h3>
+    <p class="four">
+      
+      
+      Cascading Style Sheets(CSS)는 HTML이나 XML(SVG, XHTML 같은 XML 방언(dialect) 포함)로 작성된 문서의 표현을 기술하기 위해 쓰이는 스타일시트 언어입니다. CSS는 요소가 화면, 종이, 음성이나 다른 매체 상에 어떻게 렌더링되어야 하는지 기술합니다.<br>
+      CSS는 오픈 웹의 핵심 언어 중 하나이며 여러 브라우저가 표준으로 사용하는 W3C 명세가 있습니다. 레벨 단위로 개발한 CSS1은 더 이상 사용하지 않고, 다음 레벨인 CSS2.1은 권고안(recommendation)입니다. 더 작은 모듈로 나눈 CSS3은 표준화 과정을 밟고 있습니다.
+    </p>
+  </div>  
+  </section>
+
+  <section class="ul">
+    <h2>line-style</h2>
+    <p>reset.css 에 적용되있다</p>
+    <p>list-style:none; 리스트의 점 삭제</p>
+    <ul>
+      <li>못생긴</li>
+      <li>불릿은</li>
+      <li>이제 그만</li>
+    </ul>
+
+    <a href="/index002.html"> 에전에 체크했었음 list-style-type: </a>
+  
+
+
+    
+  </section>
+  <section>
+    <h1 style="opacity: 0.5;">opacity</h1>
+    <h1 style="opacity: 10%;">0 ~ 1 값 , %도 된다</h1>
+    <h1 style="opacity: 1;">0 ~ 1 값 , %도 된다</h1>
+  </section>
+
+  </header>
+  <aside></aside>
+  <main>
+    <h1></h1>
+
+  </main>
+  <footer></footer>
+<!-- 
+  <article>
+    <h2>제목 <code>&lt;></code></h2>
+    <a target="_blank" class="button" 
+    href="#">
+      링크
+      <i class="fas fa-angle-right"></i>
+    </a>
+  </article> 
+-->
+</body>
+</html>
+
