@@ -147,7 +147,7 @@ section.border-ra .border-b{
 .section01{
   position: relative;
   width: 1fr;
-  height: 1000px;
+  height: 100px;
 }
 
 div .center{
@@ -175,7 +175,7 @@ div .center{
 
 .section01_img {
   background-image: url("./sea.jpg");
-  background-size: 100% ;
+  background-size: 10% ;
   width: 100%;
   height: 100%;
   opacity: 30%;
