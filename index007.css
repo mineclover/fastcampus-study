@@ -1,0 +1,87 @@
+section {
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 2px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 200%;
+}
+
+/* 기본 세팅 */
+body {
+  padding: 0;
+  margin: 0;
+}
+section.A .outer { 
+  width: 10em;
+  height: 10em;
+  background-color: yellowgreen;
+}
+section.A .inner { 
+  background-color: green;   
+  width: 5em;
+  height: 5em;
+  
+}
+
+
+
+section.A {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+
+section.A > div {
+  background-color: beige;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px
+}
+
+section.A > div.B .inner {
+  width: 100px;
+  height: 50px;
+}
+
+section.A > div.C .inner {
+  width: 50%;
+  height: 50%;
+}
+
+section.A > div.D .inner {
+  width: 20vw;
+  height: 10vh;
+}
+
+section.A > div.E .inner {
+  width: 20vmin;
+  height: 10vmin;
+}
+
+
+
+section.A > div.F .inner {
+  width: calc(100% + 10px);
+  height: calc(30vh - 100px);
+}
+
+
+
+section.margin_ .outer { 
+  background-color: yellowgreen;
+}
+section.margin_ .inner { 
+  color: white;
+  background-color: green; 
+  margin: 10px 4px;
+  padding: 12px 48px;
+}
+
+section .border{
+  border-style: dotted;
+  border-width: 2px;
+}
