@@ -6,7 +6,6 @@ body{
   background-color: #FF4500;
   display: flex;
   justify-content: space-between;
-  align-content:flex-start;
   align-items: center;
   flex-wrap: wrap;
   
@@ -39,6 +38,7 @@ header nav li a {
   font-size: 1.25em;
   color: #fff;
   text-decoration: none;
+  padding: 16px 16px;
   
 }
 
@@ -49,7 +49,7 @@ header nav ul {
   column-gap: 32px;
 }
 header nav li {
-  margin: 0px 16px;
+  
   white-space:nowrap;
   
   /* a 태그는 텍스트 태그라 display 속성이 들어가기 힘듬 
