@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  background-color: #fff;
 }
 
 .header {
@@ -8,12 +8,14 @@ body{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 1;
   
   
   position: fixed;
   width: 100vw;
+  min-height: 64px;
   height: 64px auto;
-  line-height: 64px;
+  
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   color: #fff;
 }
@@ -22,15 +24,19 @@ body{
   font-weight: bold;
   font-size: 2em;
   margin-left:30px;
-  width:auto;
+  margin-right: 80px;
   
   white-space:nowrap;
+  padding: 10px;
 }
+
 
 .account {
   font-weight: bold;
   font-size: 1.25em;
-  margin: 0px 50px;
+  margin-left:  auto;
+  margin-right: 50px;
+  padding: 20px;
 }
 
 
@@ -47,11 +53,74 @@ header nav ul {
   flex-wrap: wrap;
   max-width: 100%;
   column-gap: 32px;
+  
 }
 header nav li {
-  
   white-space:nowrap;
+  display: flex;
+  align-items:center;
   
-  /* a 태그는 텍스트 태그라 display 속성이 들어가기 힘듬 
-  그리고 li로 묶여있기 때문에 a에 display가 적용됬다고 한들 원하는 동작을 하지 않았을 거임 */
+  height: 60px;
 }
+
+header nav li a:hover {
+  opacity: 70%;
+}
+
+
+header nav li.on {
+  display: flex;
+  align-items: center;
+  border-bottom: 4px #fff;
+  border-style: solid;
+
+}
+
+header nav li.on:hover {
+  opacity: 70%;
+  
+
+}
+
+
+  main .side {
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    background-color: #eee;
+    border-right: 1px solid #d3d3d3;
+    
+}
+
+.side__sub{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 1.5em 1em;
+  color: rgb(95, 95, 95);
+  
+
+}
+
+aside.side li{
+  color: #333;
+  font-size: 1.2em;
+  padding: 12px 30px;
+
+}
+aside.side li:hover{
+  background-color: #555;
+  color:#fff;
+  font-size: 1.2em;
+  padding: 12px 30px;
+
+}
+
+
+.side ul {
+  
+  margin-bottom: 30px;
+  
+}
+
