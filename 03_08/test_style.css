@@ -35,9 +35,15 @@ header nav {
   grid-area: nav;
 }
 
+header nav li a {
+  font-size: 1.25em;
+  color: #fff;
+  text-decoration: none;
+}
+
 header nav li {
   display: inline-block;
   margin: 0px 16px;
-  font-size: 1.25em;
+  /* a 태그는 텍스트 태그라 display 속성이 들어가기 힘듬 
+  그리고 li로 묶여있기 때문에 a에 display가 적용됬다고 한들 원하는 동작을 하지 않았을 거임 */
 }
-
