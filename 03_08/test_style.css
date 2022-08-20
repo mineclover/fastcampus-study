@@ -4,46 +4,48 @@ body{
 
 .header {
   background-color: #FF4500;
-  display: grid;
-  grid-template-columns: 24px 400px 1fr 84px 24px;
-  grid-template-areas: 
-  'left-space title nav account right-space';
-
+  display: flex;
+  justify-content: space-between;
+  align-content:flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   position: fixed;
   width: 100vw;
-  height: 64px;
+  height: 64px auto;
   line-height: 64px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   color: #fff;
-
 }
 
 .title {
-  grid-area: title;
   font-weight: bold;
   font-size: 2em;
+  margin: 0px 30px;
+  width:auto;
   
+  white-space:nowrap;
 }
 
 .account {
-  grid-area: account;
   font-weight: bold;
   font-size: 1.25em;
+  margin: 0px 50px;
 }
 
-header nav {
-  grid-area: nav;
-}
 
 header nav li a {
   font-size: 1.25em;
   color: #fff;
   text-decoration: none;
+  
 }
 
 header nav li {
   display: inline-block;
+  align-items:stretch;
   margin: 0px 16px;
+  white-space:nowrap;
+  
   /* a 태그는 텍스트 태그라 display 속성이 들어가기 힘듬 
   그리고 li로 묶여있기 때문에 a에 display가 적용됬다고 한들 원하는 동작을 하지 않았을 거임 */
 }
