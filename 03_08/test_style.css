@@ -1,0 +1,43 @@
+body{
+  background-color: black;
+}
+
+.header {
+  background-color: #FF4500;
+  display: grid;
+  grid-template-columns: 24px 400px 1fr 84px 24px;
+  grid-template-areas: 
+  'left-space title nav account right-space';
+
+  position: fixed;
+  width: 100vw;
+  height: 64px;
+  line-height: 64px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  color: #fff;
+
+}
+
+.title {
+  grid-area: title;
+  font-weight: bold;
+  font-size: 2em;
+  
+}
+
+.account {
+  grid-area: account;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+header nav {
+  grid-area: nav;
+}
+
+header nav li {
+  display: inline-block;
+  margin: 0px 16px;
+  font-size: 1.25em;
+}
+
