@@ -1,1 +1,6 @@
 \실습코드
+node_modules
+.cache
+.storybook
+.npmrc
+stories
