@@ -4,20 +4,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index008.css">
+  <script src="index008.js"></script>
   <title>js 첫만남 js써보자</title>
   
 </head>
 <body>
 
-  <h1>안녕하세요</h1>
+  <h1>자스 실행 안됨</h1>
   <p>body든 어디든 스크립트 함수선언 외부에 작성된건 일단 실행된다</p>
   <p>일단 실행되긴 하는데 별다른 트리거 없이 실행되는 코드는 위에서 아래로 읽혀서 </p>
   <p>순서적으로 script코드가 위에 있으면 실행되고 나서 태그가 나온다</p>
-  
+  <p>즉 위에서 불러와진 script은 body가 실행되기 전에 이미 실행 됬다 </p>  
+  <a target="_blank" href="https://seokzin.tistory.com/entry/JavaScript-JavaScript-%EB%AA%85%EB%AA%85-%EA%B7%9C%EC%B9%99-Coding-Conventions">js 명명 규칙</a>
+  <a>딱히 영어만 쓰란 말은 없는데 영어만 쓴다 (숫자 , 한글도 되긴 함)</a>
+  <a>$ , 공백 쓰면 안된다</a>
+  <script>
+    document.querySelector("h1").innerHTML = "html 자스 정상 실행";
+  </script>
+
+  <section>
+    <p>가장 기초적인 게 나온다</p>
+    <a target="_blank" href="https://www.everdevel.com/JavaScript/selector/">자바스크립트 셀렉터</a>
+    <article>
+      <h2 class="chapter01">.innerHTML</h2>
+      <button onclick="changeSalutation()">인사말 바꾸기</button>
+    </article>
+    <article>
+      <h2 class="chapter02">안녕하세요</h2>
+      <h2>setInterval</h2>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/setInterval">setInterval MDN</a>
+      <p>1초마다 인사말이 바뀌고 있죠?</p>
+      <button onclick="startTextChange()">시작</button>
+      <button onclick="stopTextChange()">멈추기</button>
+
+      <p>button 태그에서는 () 붙이고 setInterval 쓸 때는 (함수명, delay, arg0, arg2 )</p>
+    </article>
+  </section>
 
   
-  <script>
-    document.querySelector("h1").innerHTML = "반갑습니다.";
-  </script>
+
+
+<script>
+  stopIntervalSalutations = setInterval(intervalSalutations, 1000);
+</script>
 </body>
 </html>

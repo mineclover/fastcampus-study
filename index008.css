@@ -1,0 +1,10 @@
+h1 {
+  font-size: 2rem;
+}
+section {
+  border: 2px solid #333;
+  padding: 16px;
+}
+article {
+  border: 1px dashed #000;
+}
