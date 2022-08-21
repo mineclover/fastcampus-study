@@ -37,6 +37,7 @@ body{
   margin-left:  auto;
   margin-right: 50px;
   padding: 20px;
+
 }
 
 
@@ -124,3 +125,125 @@ aside.side li:hover{
   
 }
 
+main {
+  position: relative;
+  padding: 64px 0px 0px 240px;
+  /*     padding-top: 64px;
+  padding-left: 240px; */
+}
+
+section.intro {
+  padding: 100px 80px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+
+section.intro h1 {
+  font-size: 2.3em;
+  font-weight: 900;
+}
+section.intro p {
+  padding-top: 1em;
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+
+section.list {
+  background-color: #fafafa;
+  padding: 24px;
+  
+}
+article {
+  width: 440px;
+  height: auto;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+
+  padding: 24px;
+  margin: 10px;
+  transition-duration: 0.5s;
+}
+
+article:hover{
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.5s;
+}
+
+div .photo {
+  width: 440px;
+  height: 320px;
+  border-radius: 4px;
+  background-size: cover; 
+}
+
+div.info{
+  margin-top: 1em;
+  height: 3em auto;
+  display: grid;
+  grid-template-columns: 6em auto;
+  grid-template-rows: 2em auto;
+  grid-template-areas: 
+  'like author' 
+  'like desc';
+}
+
+
+div.info .like{
+  grid-area: like;
+  background-repeat:no-repeat;
+  background-image: url(heart-solid.svg);
+  background-position: 50%;
+}
+
+div.info .like:hover{
+  opacity: 70%;
+}
+
+div.info .on{
+  background-image: url(heart-solid-on.svg);
+}
+
+
+div.info .author{
+  grid-area: author;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
+div.info .desc{
+  grid-area: desc;
+  font-size: 1.2em;
+  padding: 4px 0;
+  color: gray;
+}
+
+
+#photo_01 {
+  background-image: url(photo_01.jpg);
+}
+#photo_02 {
+  background-image: url(photo_02.jpg);
+}
+#photo_03 {
+  background-image: url(photo_03.jpg);
+}
+#photo_04 {
+  background-image: url(photo_04.jpg);
+}
+#photo_05 {
+  background-image: url(photo_05.jpg);
+}
+#photo_06 {
+  background-image: url(photo_06.jpg);
+}
+
+footer {
+  position: relative;
+  padding: 64px;
+  background-color: #555;
+}
