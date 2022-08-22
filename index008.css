@@ -1,10 +1,31 @@
 h1 {
   font-size: 2rem;
 }
+h2 {
+  font-size: 1.6rem;
+}
+html {
+  padding: 16px;
+}
+p {
+  line-height: 1.5em;
+}
+
 section {
   border: 2px solid #333;
   padding: 16px;
 }
 article {
   border: 1px dashed #000;
+  padding: 16px;
+  line-height: 1.5rem;
+}
+
+button {
+  border: 1px #333 solid;
+  border-radius: 4px;
+  padding: 4px 16px;
+  margin: 8px;
+  font-weight: bold;
+  
 }

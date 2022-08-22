@@ -27,27 +27,107 @@
   <section>
     <p>가장 기초적인 게 나온다</p>
     <a target="_blank" href="https://www.everdevel.com/JavaScript/selector/">자바스크립트 셀렉터</a>
+    <p>콘솔에서 자스 실행은그냥 스크립트에 쓰듯 하면 된다</p>
+    <p>함수 이름을 써도, 구성물을 써도 무방함 변수 미리 선언하는 것도 가능</p>
     <article>
       <h2 class="chapter01">.innerHTML</h2>
       <button onclick="changeSalutation()">인사말 바꾸기</button>
     </article>
     <article>
       <h2 class="chapter02">안녕하세요</h2>
-      <h2>setInterval</h2>
+      <h2>setInterval()</h2>
+      <p>무한 루프</p>
       <a href="https://developer.mozilla.org/en-US/docs/Web/API/setInterval">setInterval MDN</a>
       <p>1초마다 인사말이 바뀌고 있죠?</p>
       <button onclick="startTextChange()">시작</button>
       <button onclick="stopTextChange()">멈추기</button>
-
-      <p>button 태그에서는 () 붙이고 setInterval 쓸 때는 (함수명, delay, arg0, arg2 )</p>
+      <script>
+        stopIntervalSalutations = setInterval(intervalSalutations, 1000);
+      </script>
+      <p>button 태그에서는 () 붙이고 setInterval 쓸 때는 setInterval(함수명, delay, arg0, arg2 )</p>
     </article>
+    <article>
+      <h2>alert()</h2>
+      <p>경고창</p>
+      <button onclick="showMyAlert()">알림창 버튼</button>
+
+    </article>
+    <article>
+      <h2>typeof()</h2>
+      <p>자료형 보기</p>
+      <div id="typesTest"></div>
+      <button onclick="numberTypeCheck()">100</button>
+      <button onclick="stringTypeCheck()">"100"</button>
+      <button onclick="functionTypeCheck()">function(){}</button>
+      <button onclick="nullTypeCheck()">null</button>
+      
+      <a target="_blank" href="https://www.codingfactory.net/10288">tpyeof 정리된 블로그</a>
+    </article>
+    <article>
+      <h2>typeof()</h2>
+      <p>자료형 연산</p>
+      <p> 사칙연산 기호 : + , - , / , * , %(나머지)</p>
+
+      <div id="typescalc"></div>
+      <button onclick="numTOnum()">10 + a</button>
+      <button onclick="stringTOnum()">"10" + a</button>
+      
+      
+    </article>
+    <article>
+      <h2>boolean과 조건문, 논리연산자, 삼항 연산자</h2>
+      <p>우선순위가 중요하다 우선순위 순서로 계산함</p>
+      <h2>boolean</h2>
+      <p>단순하게 보면 참(true,1,...) 또는 거짓(0,-1,null, undefined, false)</p>
+      <p>boolen은 true, false로 이뤄진 자료형</p>
+      <a href="https://developer.mozilla.org/ko/docs/Glossary/Falsy">거짓으로 평가되는 값</a>
+      <h2>! 부정문</h2>
+      <p>console.log(!myBool_1); 은 myBool_1의 반대 값을 출력하고</p>
+      <p>var myBool_3 = !myBool_1; 은 myBool_1의 반대값을 저장한다</p>
+      <h2>조건문, if~else</h2>
+      <p>그리고 이러한 boolean이 참일 때 조건문(if), 조건 반복문 (for 등)이 동작한다</p>
+      <h2>비교 연산자</h2>
+      <p> `==` : 같은 타입으로 바꿔 비교, `===` : 타입이 같은지도 비교 </p>
+      <p>같다 => true</p>
+      <p>비교 한 것이 모두 같으면 true 반환 </p>
+      <p>`!=` : 같은 타입으로 바꿔 비교, `!==` : 타입이 같은지도 비교</p>
+      <p>같지 않다 => true</p>
+      <p>비교한 것이 모두 같으면 false 반환 (`==`, `===`과 반대)</p>
+
+      <h3>`>`, `>=`, `<`, `<=` 연산자</h3>
+      <p> 숫자일 경우 크기를 비교</p>
+      <p>* 문자열일 경우 알파벳순 비교 (유니코드 기준)</p>
+
+      <h2>논리 연산자</h2>
+      <p>`&&` : AND 연산자</p>
+      <p>`||` : OR 연산자</p>
+    </article>
+    <article>
+      <h2>if , else if, else</h2>
+      <p>if () : ~ 일 때 {}; 실행</p>
+      <p>if () 가 아니고 else if () : ~ 일 때 {}; 실행</p>
+      <p>다 아닐 때 else {}; 실행</p>
+
+      <p>함수랑 비슷하게 생김, 조건이 충족(boolean)할 때만 실행</p>
+    </article>
+    <article>
+      <h2>삼항 연산자</h2>
+      <p>왜 인지 모르겠는데 이걸 많이 쓴다</p>
+      <p>var largerNumber = number > 10 ? "참" : "거짓"</p>
+      <p> [해석] 조건문 ? true일 때 리턴 : false 일 때 리턴 </p>
+
+      <p>Q. 받은 숫자가 10보다 큰가</p>
+      <button onclick="three(20)">20보내기</button>
+      <button onclick="three(5)">5보내기</button>
+      <h2 id="threeresult"></h2>
+    </article>
+
   </section>
 
   
 
 
-<script>
-  stopIntervalSalutations = setInterval(intervalSalutations, 1000);
-</script>
+
 </body>
 </html>
+
