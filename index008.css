@@ -34,3 +34,41 @@ button:hover {
   background-color: #333;
   color:#fff;
 }
+
+div.Operator_table {
+  
+}
+
+div.Operator_table table {
+  
+  
+  /* 잘못된 문법 float는 요소를 정렬하기 위한 문법이 아니다 */
+
+}
+
+div.Operator_table tr{
+  border: #333 2px solid;
+  
+}
+
+div.Operator_table tr td {
+  border: #333 1px solid;
+  text-align: center;
+  /* 텍스트 가로축 가운데 정렬 */
+  vertical-align: middle;
+  /* 텍스트 가로축 가운데 정렬 */
+  padding: 8px;
+}
+
+div.Operator_table tr td:first-child {
+  background-color: #eee;
+  font-weight: bold;
+}
+div.Operator_table tr:first-child{
+  background-color: #eee;
+  font-weight: bold;
+}
+
+div.Operator_table tr td[rowspan]{
+  background-color: #ffeeee;
+}

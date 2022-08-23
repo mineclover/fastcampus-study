@@ -72,3 +72,4 @@ function three(number){
   document.querySelector("#threeresult").innerHTML = largerNumber;
   console.log(largerNumber);
 }
+
