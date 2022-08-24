@@ -3,6 +3,10 @@ h1 {
 }
 h2 {
   font-size: 1.6rem;
+  line-height: 2rem;
+}
+h3 {
+  font-size: 1.2em ;
 }
 html {
   padding: 16px;
@@ -35,14 +39,10 @@ button:hover {
   color:#fff;
 }
 
-div.Operator_table {
-  
-}
 
 div.Operator_table table {
-  
-  
-  /* 잘못된 문법 float는 요소를 정렬하기 위한 문법이 아니다 */
+  margin: auto;
+  /* float 를 쓰는 건 잘못된 문법 float는 요소를 정렬하기 위한 문법이 아니다 */
 
 }
 
@@ -72,3 +72,18 @@ div.Operator_table tr:first-child{
 div.Operator_table tr td[rowspan]{
   background-color: #ffeeee;
 }
+
+code {
+  padding: 0.2em;
+  border-radius: 0.2em;
+  font-size: 1.2em;
+  background-color: #eee;
+  color: #ff3333;
+  font-weight: bold;
+  border: 1px #ddd solid;
+}
+
+code:hover {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
