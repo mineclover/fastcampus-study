@@ -33,6 +33,15 @@
       <h2 class="chapter01">.innerHTML</h2>
       <button onclick="changeSalutation()">인사말 바꾸기</button>
     </article>
+		<article>
+			<h2>.append()</h2>
+			<h3>기존 내용에 추가한다 +=과 같다 보여주기에 가까운 관계다</h3>
+		</article>
+		<article>
+			<h2>함수안에 선택자를 넣기도 한다</h2>
+			<button onclick="appendSalutation()">글자 바꾸기</button>
+
+		</article>
     <article>
       <h2 class="chapter02">안녕하세요</h2>
       <h2>setInterval()</h2>
@@ -519,7 +528,7 @@
 
 			<h3 class="array__viewer"></h3>
 			<label for="ip-indexOf-text">indexOf 검색 : </label>
-			<input id="ip-indexof-text" type="text" onkeyup="array_index_reflesh();">
+			<input id="ip-indexof-text" type="text" onkeyup="array_index_reflesh();" value="쌍따옴표 ">
 			<span class="index_result"></span>
 			<p>아 type 텍스트로 해놔서 그런가</p>
 			<p>7 과 999는 number 로 작성되었음</p>
@@ -538,7 +547,7 @@
 			<h3>원하는 배열을 입력 후 지운다</h3>
 			<label for="ip-splice-pos">위치</label>
 
-			<input id="ip-splice-pos" type="text">
+			<input id="ip-splice-pos" type="text" value="0">
 			<label for="ip-splice-number">갯수</label>
 			<input id="ip-splice-number" type="text" value="1">
 			<button onclick="array_splice()">삭제</button>
@@ -554,11 +563,43 @@
 			<h2>.concat()</h2>
 			<p> 변수B = 배열A.concat([2,4,8,'배열 파라미터도 가능']) 이런식으로 넣으면</p>
 			<p> 변수 B 에는 배열A + concat 안에 있는 것이 같이 들어간다</p>
-			<p>C에 있는 strcat과 유사한 동작</p>
+			<p>C에 있는 strcat과 유사한 동작.. 인가? 배열 단위로 적용된다고 보면 될듯 하다</p>
+			<p>A = A + 1 이런식으로 써도 된다</p>
+			
+			<button onclick="array_input()">추가하기</button>
 
 			
   </section>
+	<section>
+		<article>
+			<h2>for</h2>
+			<h3>일반적인 for 문과 같다 for ( `루프 진입 초기화` ; `루프 유지 조건문` ; `1회 루프 후 작업` ) { }</h3>
+			<p>for~else 같은 건 없는 것 같다</p>
+			<p>루프가 시작할 때 루프 실행되는게 맞는지 검증한다 루프 당 1번</p>
+			<hr>
+			<h2>while</h2>
 
+			<h3>일반적인 while과 같다 while(루프 유지 조건) { }</h3>
+			<p><p>루프가 시작할 때 루프 실행되는게 맞는지 검증한다 루프 당 1번</p></p>
+			<hr>
+			<h2>continue</h2>
+			<h3>1회 루프를 끝내고 루프를 다시 시작한다</h3>
+			<p>for 문의 경우 1, 2, if(~)continue; > 루프 유지 가능한지 확인 > 1, 2, 3, 4</p>
+			
+			<hr>
+			<h2>break</h2>
+			<h3>루프를 끝낸다 지금 있는 루프만 끝낸다</h3>
+
+
+
+		</article>
+		
+	</section>
+	<section>
+		<article>
+
+		</article>
+	</section>
 
 
 </body>

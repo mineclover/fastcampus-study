@@ -1,14 +1,19 @@
-function changeSalutation() {
+function changeSalutation(){
   //changeSalutation
   var salutation = prompt("원하는 인사말을 입력하세요.");
-    document.querySelector(".test").innerHTML = salutation;
+    document.querySelector(".chapter01").innerHTML = salutation;
+}
+function appendSalutation(){
+  //changeSalutation
+  let appendText = '.append로 뭐가 나올까';
+    document.querySelector(".chapter01").append(appendText);
 }
 
 
 var i = 0;
 let stopIntervalSalutations;
 
-function stopTextChange() {
+function stopTextChange(){
   // check if an interval has already been set up
   clearInterval(stopIntervalSalutations);
   // release our intervalID from the variable
@@ -124,5 +129,14 @@ function array_splice(){
   let text = parseInt(document.querySelector("#ip-splice-pos").value);
   let num = parseInt(document.querySelector("#ip-splice-number").value);
   arrayData.splice(text,num);
+  array_view();
+}
+
+function array_input(){
+  let inputForm = prompt("A ,B ,C 으로  (,)로 구분해 입력하세요");
+  let addWord = inputForm.split(',');
+  //inputForm + typeof(inputForm);
+  arrayData = arrayData.concat(addWord);
+  console.log(arrayData);
   array_view();
 }
