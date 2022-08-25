@@ -42,7 +42,7 @@
       <button onclick="startTextChange()">시작</button>
       <button onclick="stopTextChange()">멈추기</button>
       <script>
-        stopIntervalSalutations = setInterval(intervalSalutations, 1000);
+        //stopIntervalSalutations = setInterval(intervalSalutations, 1000);
       </script>
       <p>button 태그에서는 () 붙이고 setInterval 쓸 때는 setInterval(함수명, delay, arg0, arg2 )</p>
     </article>
@@ -120,11 +120,444 @@
       <button onclick="three(20)">20보내기</button>
       <button onclick="three(5)">5보내기</button>
       <h2 id="threeresult"></h2>
+
+      <h2> 자바스크립트 연산자 우선순위 </h2>
+      <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Operator_Precedence">우선순위</a>
+      <div class="Operator_table">
+        <table>
+          <tr>
+              <td>연산자 유형</td>
+              <td>연산자</td>
+              <td>우선순위</td>
+              <td>결합성</td>
+          </tr>
+          <tr>
+              <td>그룹</td>
+              <td>( … )</td>
+              <td>19</td>
+              <td>없음</td>
+          </tr>
+          <tr>
+              <td>멤버 접근</td>
+              <td>… . …</td>
+              <td rowspan="5">18</td>
+              <td>좌결합성</td>
+          </tr>
+          <tr>
+              <td>계산된 멤버 접근</td>
+              <td>… [ … ]</td>
+              
+              <td>좌결합성</td>
+          </tr>
+          <tr>
+              <td>new&nbsp;(인자 리스트 제공)</td>
+              <td>new … ( … )</td>
+              
+              <td>없음</td>
+          </tr>
+          <tr>
+              <td>함수 호출</td>
+              <td>… (&nbsp;…&nbsp;)</td>
+              
+              <td>좌결합성</td>
+          </tr>
+          <tr>
+              <td>옵셔널 체이닝</td>
+              <td>?.</td>
+              
+              <td>좌결합성</td>
+          </tr>
+          <tr>
+              <td>new&nbsp;(인자 리스트 생략)</td>
+              <td>new …</td>
+              <td>17</td>
+              <td>우결합성</td>
+          </tr>
+          <tr>
+              <td>후위 증가 </td>
+              <td>… ++</td>
+              <td rowspan="2">16</td>
+              <td rowspan="2">없음</td>
+          </tr>
+          <tr>
+              <td>후위 감소 </td>
+              <td>… --</td>
+
+          </tr>
+          <tr>
+              <td>논리 NOT </td>
+              <td>! …</td>
+              <td rowspan="10">15</td>
+              <td rowspan="10">우결합성</td>
+          </tr>
+          <tr>
+              <td>비트 NOT </td>
+              <td>~ …</td>
+
+          </tr>
+          <tr>
+              <td>단항 양부호</td>
+              <td>+ …</td>
+
+          </tr>
+          <tr>
+              <td>단항 부정</td>
+              <td>- …</td>
+
+          </tr>
+          <tr>
+              <td>전위 증가 </td>
+              <td>++ …</td>
+
+          </tr>
+          <tr>
+              <td>전위 감소 </td>
+              <td>-- …</td>
+
+          </tr>
+          <tr>
+              <td>typeof</td>
+              <td>typeof …</td>
+
+          </tr>
+          <tr>
+              <td>void</td>
+              <td>void …</td>
+
+          </tr>
+          <tr>
+              <td>delete</td>
+              <td>delete …</td>
+
+          </tr>
+          <tr>
+              <td>await</td>
+              <td>await …</td>
+
+          </tr>
+          <tr>
+              <td>거듭제곱</td>
+              <td>… ** …</td>
+              <td>14</td>
+              <td>우결합성</td>
+          </tr>
+          <tr>
+              <td>곱하기</td>
+              <td>… * …</td>
+              <td rowspan="3">13</td>
+              <td rowspan="3">좌결합성</td>
+          </tr>
+          <tr>
+              <td>나누기</td>
+              <td>… / …</td>
+
+          </tr>
+          <tr>
+              <td>나머지</td>
+              <td>… % …</td>
+
+          </tr>
+          <tr>
+              <td>더하기</td>
+              <td>… + …</td>
+              <td rowspan="2">12</td>
+              <td rowspan="2">좌결합성</td>
+          </tr>
+          <tr>
+              <td>빼기</td>
+              <td>… - …</td>
+
+          </tr>
+          <tr>
+              <td>비트 왼쪽 시프트 </td>
+              <td>… &lt;&lt; …</td>
+              <td rowspan="3">11</td>
+              <td rowspan="3">좌결합성</td>
+          </tr>
+          <tr>
+              <td>비트 오른쪽 시프트 </td>
+              <td>… &gt;&gt; …</td>
+
+          </tr>
+          <tr>
+              <td>비트 부호 없는 오른쪽 시프트 </td>
+              <td>… &gt;&gt;&gt; …</td>
+
+          </tr>
+          <tr>
+              <td>미만 </td>
+              <td>… &lt; …</td>
+              <td rowspan="6">10</td>
+              <td rowspan="6">좌결합성</td>
+          </tr>
+          <tr>
+              <td>이하 </td>
+              <td>… &lt;= …</td>
+
+          </tr>
+          <tr>
+              <td>초과 </td>
+              <td>… &gt; …</td>
+
+          </tr>
+          <tr>
+              <td>이상 </td>
+              <td>… &gt;= …</td>
+
+          </tr>
+          <tr>
+              <td>in</td>
+              <td>… in …</td>
+
+          </tr>
+          <tr>
+              <td>instanceof</td>
+              <td>… instanceof …</td>
+
+          </tr>
+          <tr>
+              <td>동등</td>
+              <td>… == …</td>
+              <td rowspan="4">9</td>
+              <td rowspan="4">좌결합성</td>
+          </tr>
+          <tr>
+              <td>부등</td>
+              <td>… != …</td>
+
+          </tr>
+          <tr>
+              <td>일치 </td>
+              <td>… === …</td>
+
+          </tr>
+          <tr>
+              <td>불일치 </td>
+              <td>… !== …</td>
+
+          </tr>
+          <tr>
+              <td>비트 AND</td>
+              <td>… &amp; …</td>
+              <td>7</td>
+              <td>좌결합성</td>
+          </tr>
+          <tr>
+              <td>비트 XOR </td>
+              <td>… ^ …</td>
+              <td>7</td>
+              <td>좌결합성</td>
+          </tr>
+          <tr>
+              <td>비트 OR </td>
+              <td>… | …</td>
+              <td>6</td>
+              <td>좌결합성</td>
+          </tr>
+          <tr>
+              <td>논리 AND </td>
+              <td>… &amp;&amp; …</td>
+              <td>5</td>
+              <td>좌결합성</td>
+          </tr>
+          <tr>
+              <td>논리 OR </td>
+              <td>… || …</td>
+              <td rowspan="2">4</td>
+              <td>좌결합성</td>
+          </tr>
+          <tr>
+              <td>널 병합 연산자</td>
+              <td>… ?? …</td>
+              
+              <td >좌결합성</td>
+          </tr>
+          <tr>
+              <td>조건 (삼항)</td>
+              <td>… ? … : …</td>
+              <td>3</td>
+              <td>우결합성</td>
+          </tr>
+          <tr>
+              <td>할당 (=대입) </td>
+              <td>… = …</td>
+              <td rowspan="16">2</td>
+              <td rowspan="16">우결합성</td>
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… += …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… -= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… **= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… *= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… /= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… %= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… &lt;&lt;= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… &gt;&gt;= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… &gt;&gt;&gt;= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… &amp;= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… ^= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… |= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… &amp;&amp;= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… ||= …</td>
+
+          </tr>
+          <tr>
+              <td>할당 </td>
+              <td>… ??= …</td>
+
+          </tr>
+          <tr>
+              <td>yield</td>
+              <td>yield …</td>
+              <td rowspan="2">2</td>
+              <td rowspan="2">우결합성</td>
+          </tr>
+          <tr>
+              <td>yield*</td>
+              <td>yield* …</td>
+
+          </tr>
+          <tr>
+              <td>쉼표 / 시퀀스</td>
+              <td>… , …</td>
+              <td>1</td>
+              <td>좌결합성</td>
+          </tr>
+      </table>
+
+      </div>
     </article>
 
-  </section>
+    <article>
+      <h2>배열 ( array ) 배열명[인덱스]</h2>
+			<p> 저장되는 형태 [...,...] </p>
+			<img src="img\008_01_배열 출력 값.PNG">
+			<p> 불러와지는 형태 변수명[인덱스], 여기서 변수명은 파라미터로 사용됨</p>
+			<p> 자스에서 타입 제한 없음 <code>var multiTypes = [100, true, 'English', [2, 4, 8]];</code></p>
 
-  
+			<hr>
+			<h2>.length</h2>
+			<p>배열의 크기 반환</p>
+			<button onclick="arrayTest()"> arrayTest 버튼</button>
+			<ul class="array__ul">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<h3>undefined 값은 정의되지 않음을 뜻함, length 값은 1부터 배열은 0부터 시작함을 알 수 있음</h3>
+			<p><b>for 문에서 카운팅 변수 < length 면 딱 배열을 다 뽑아낼 수 있음을 알 수 있음 ( +3개만큼 의도한 값을 추가 )</b></p>
+			<p>(html 넣는 건 아직 몰라서 미리 공간을 만들어 두었음)</p>
+			
+			<hr>
+			<h2>indexOf</h2>
+			<p>원하는 값이 어느 인덱스에 있는지 찾는 것</p>
+			<p>없으면 <code>-1</code> 이 나오는 것이 장점 (없어도 에러가 아니라는 장점)</p>
+			<p>숫자는 묶지 않고 쓰고 , 문자열은 묶어서 씀</p>
+			<p>indexOf는 ===으로 요소를 비교한다 ( 만약 배열에 있는 게 문자열이 아니면 검색되지 않음 )</p>
+			
+			
+
+			<h3 class="array__viewer"></h3>
+			<label for="ip-indexOf-text">indexOf 검색 : </label>
+			<input id="ip-indexof-text" type="text" onkeyup="array_index_reflesh();">
+			<span class="index_result"></span>
+			<p>아 type 텍스트로 해놔서 그런가</p>
+			<p>7 과 999는 number 로 작성되었음</p>
+			<script>
+				array_view()
+			</script>
+			<p> 인덱스 잘쓴다</p>
+
+			<!-- 설명 편의를 위해 스플릿을 위로 올림 -->
+			<hr>
+			<h2>.splice()</h2>
+			<p>원하는만큼 자른다? 맞다 배열에 대한 기능이다</p>
+			<p><code>.splice(시작인덱스,없앨 갯수)</code></p>
+			<p>스플릿할 때 대입연산자 쓰면 스플릿한 게 대입한 변수에 대입된다</p>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice">MDN javascript splice()</a>
+			<h3>원하는 배열을 입력 후 지운다</h3>
+			<label for="ip-splice-pos">위치</label>
+
+			<input id="ip-splice-pos" type="text">
+			<label for="ip-splice-number">갯수</label>
+			<input id="ip-splice-number" type="text" value="1">
+			<button onclick="array_splice()">삭제</button>
+
+
+			<hr>
+			<h2>.push()</h2>
+			<p>배열 끝에 인덱스를 넣는다 값을 넣을 때 넣어지는 인덱스도 나오는건가 싶어서 따로 뽑아 활용해보려해봤으나 실패하였다  </p>
+			<p>>개발자도구 콘솔에서 push 쓰면 나오는 숫자를 뽑아보려했었다</p>
+			<button onclick="array_push()">push</button>
+
+			<hr>
+			<h2>.concat()</h2>
+			<p> 변수B = 배열A.concat([2,4,8,'배열 파라미터도 가능']) 이런식으로 넣으면</p>
+			<p> 변수 B 에는 배열A + concat 안에 있는 것이 같이 들어간다</p>
+			<p>C에 있는 strcat과 유사한 동작</p>
+
+			
+  </section>
 
 
 

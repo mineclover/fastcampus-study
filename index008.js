@@ -72,3 +72,57 @@ function three(number){
   document.querySelector("#threeresult").innerHTML = largerNumber;
   console.log(largerNumber);
 }
+
+function arrayTest(){
+  let multiTypes = [100, true, 'English', [2, 4, 8]];
+
+  
+  for (let array__count = 0; array__count < multiTypes.length + 3; array__count++){
+    
+
+    if (array__count == multiTypes.length + 1 ){
+      document.querySelectorAll(".array__ul > li")[array__count].innerHTML = `multiTypes의 length 값:${multiTypes.length}`
+    }
+    else if (array__count  == multiTypes.length + 2){
+      document.querySelectorAll(".array__ul > li")[array__count].innerHTML = `length typeof 값:${typeof(multiTypes.length)}`
+    }
+    else {
+      document.querySelectorAll(".array__ul > li")[array__count].innerHTML = `현재 인덱스 ${array__count} : ${multiTypes[array__count]}`;
+    }
+  }  
+}
+
+var arrayData = ['사과','바나나','A','B','C','사과',7,999,'77',"쌍따옴표"];
+
+function array_index_reflesh(){
+  let text = document.querySelector("#ip-indexof-text").value;
+  document.querySelector(".index_result").innerHTML = `${arrayData.indexOf(text)} + 입력값 typeOf: ${typeof(text)}`;
+
+}
+
+function array_view(){
+  //document.querySelector(".array__viewer").innerHTML = `현재 배열: ${arrayData}` ;
+  let sumData ='[';
+  for (let array__count = 0; array__count < arrayData.length; array__count++){
+    sumData += `${array__count}:${arrayData[array__count]}, `;
+  }
+  sumData = sumData.slice(0,-2);
+  sumData += ']';
+  document.querySelector(".array__viewer").innerHTML = `현재 배열: ${sumData}` ;
+
+}
+
+function array_push(){
+  //changeSalutation
+  let inputForm = prompt("추가할 요소를 입력하세요");
+    arrayData.push(inputForm);
+    array_view();
+    
+}
+
+function array_splice(){
+  let text = parseInt(document.querySelector("#ip-splice-pos").value);
+  let num = parseInt(document.querySelector("#ip-splice-number").value);
+  arrayData.splice(text,num);
+  array_view();
+}
