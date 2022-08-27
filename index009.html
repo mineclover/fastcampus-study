@@ -10,30 +10,120 @@
   <title>함수와 이벤트 챕터</title>
   
 </head>
-<body>
+<body onload="sayPageIsLoaded()">
   <h1>함수나 이벤트, 프로퍼티</h1>
   <p>함수는 함수, 이벤트는 트리거, 프로퍼티는 종속적인 부가 기능 등</p>
   <section>
     <article>
       <h2>함수 실행 방식</h2>
-      <div class="new-layout">
-        <ul class="new-layout__ul"></ul>
+      <div class="list-layout">
+        <ul class="list-layout__ul"></ul>
       </div>
       <h3>생성할 오브젝트를 선택하고 .createElement("li"); 해서 넣었다.. 뭐지</h3>
       <p>04 10분의 내용임</p>
       <button onclick="insertHtmlAddli()">createElement("li")</button>
-      <button onclick="insertHtmlAddul()">createElement("ul li")</button>
-      <p> (li div) 같은 건 안됨 하려면 중복해서 만드셈</p>
-      생성하고 만들고 생성하고 만들고,
+      <button onclick="insertHtmlAddul()">뎁스 생성</button>
+      <p>계속 ul li 형식으로 만들어지는건 문제지만 생략하기로 하였음...</p>
+      <p> createElement("div ul"); 같은 건 안된다</p>
+      생성하고 만들고 생성하고 만들고,함수를 변수에 넣을 수 있다
+      <h3>querySelector("#index_" + teamNumber) 이 가능하다</h3>
+      <p>백틱도 된다</p>
+      <table class="table-id-index">
+        <tr>
+          <td id="index_0"><button onclick="tableIdSelector(0)">00</button></td>
+          <td id="index_1"><button onclick="tableIdSelector(1)">01</button></td>
+          <td id="index_2"><button onclick="tableIdSelector(2)">02</button></td>
+          <td id="index_3"><button onclick="tableIdSelector(3)">03</button></td>
+        </tr>
+      </table>
+      <h3>클래스를 추가할 수도 있음 (삭제는 아직 안했다)</h3>
+      <a href="https://hianna.tistory.com/469">참고 링크</a>
+      <table class="select-table">
+        <tr>
+          <td><button onclick="tableSelector(0)">00</button></td>
+          <td><button onclick="tableSelector(1)">01</button></td>
+          <td><button onclick="tableSelector(2)">02</button></td>
+          <td><button onclick="tableSelector(3)">03</button></td>
+        </tr>
+      </table>
+      
+      
+      
+      
     </article>
     <article>
       <h2>new Date()</h2>
       <div class="date-result"></div>
       <p>날짜 보여줌</p>
+    
+    </article>
+    <article>
+      <h2>return ~</h2>
+      <p>함수 실행 후 값을 반환, return실행 시 해당 함수 탈출</p>
+      <p>length, indexOf typeOf 같은 것들도 다 return받은 값임</p>
+      <p>isPrimeNumber(n)</p>
+
+      <hr>
+      <h2>다중 함수</h2>
+      <p>return이 있으면 반환되는 값을 바탕으로 함수A(리턴있는함수B)를 할 수 있다</p>
+      <h3>응용 방식 : 재귀함수</h3>
+      <p>함수A(변수B , 변수C){ ... ruturn 함수A(변수A,변수B); } 이런식으로 무한루프 뜰 것 같은 것을 재귀함수라고 함</p>
+      <p>어딘가엔 조건문으로 값을 반환해야한다</p>
+      <p>ruturn , B 이렇게 리턴하면 여러 개보내진다</p>
+      <input id="betweenNum01" type="text" value="3">
+      <input id="betweenNum02" type="text" value="7">
+      <button onclick="runBetween()">중간 값 더하기</button>
+      <span id="betweenResult"></span>
+    
+    </article>
+
+  </section>
+  <section>
+    <article>
+      <h2>화면 로딩 끝나고 동작하는 스크립트</h2>
+      <p>&lt;body onload="sayPageIsLoaded();"></p>
+      <p>티 안나게 콘솔로그로 바꿔둠</p>
+      <p>꼭 body 뿐만 아니라 다른 것에서도 유사한 게 있다</p>
+      <a href="https://developer.mozilla.org/ko/docs/Web/API/Window/load_event">load 이벤트 트리거</a>
+      <p></p>
     </article>
   </section>
+  <section>
+    <h1>팀 배정</h1>
+
+
+<table class="team-assignment">
+  <tr>
+    <td colspan="3" id="not_assigned"></td>
+  </tr>
+  <tr>
+    <td colspan="3" id="now-assign"></td>
+  </tr>
+  <tr>
+    <td>1팀<button onclick="assignMemberToTeam(1)">배정</button></td>
+    <td>2팀<button onclick="assignMemberToTeam(2)">배정</button></td>
+    <td>3팀<button onclick="assignMemberToTeam(3)">배정</button></td>
+  </tr>
+  <tr>
+    <td>
+      
+      <ul id="team_1"></ul>
+    </td>
+    <td>
+      
+      <ul id="team_2"></ul>
+    </td>
+    <td>
+      
+      <ul id="team_3"></ul>
+    </td>
+  </tr>
+</table>
+  </section>
+
 
 </body>
 
 </html>
+
 
