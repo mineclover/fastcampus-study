@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index010.css">
+  <script src="index010.js"></script>
+  <title>객체와 스타일 다루기</title>
+</head>
+<body onload="afterLoad()">
+  <h1>(object)Json 객체 구조 다룸</h1>
+  <section>
+    <article>
+      <h2>객체는 json과 형태가 유사함 key-value</h2>
+      <p>테스트용 객체 person_1</p>
+      <p>사용하기 유용한 것은 `typeof 변수` , `keyof 변수`> Object.keys(객체)</p>
+      <p>그런데 keyof는 타입스크립트에만 있어서... 찾아봄 타입스크립트는 자바스크립트라이브러리인데 안될리가!</p>
+      <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/keys">Object.keys()</a>
+      <p>object에 다 넣을 수 있다</p>
+      <img src="img\010_01_오브젝트.png">
+      
+      <div class="object_value"></div>
+      <p>열심히 JSON.stringify 같은 게 있는 줄 모르고 만들었으나 object 이름 받는 거에서 막혔다</p>
+      <p>JSON.stringify은 많이 쓴다고 한다</p>
+      <a href="https://github.com/samchon/typescript-json">나중에 적용해보던지 하자</a>
+      <p>시간이 없음으로 html에 올리는 건 생략 결과는 개발자모드에서..</p>
+      <button onclick="objectView(person_1)">objectView(person_1)</button>
+    </article>
+  </section>
+  <section>
+    <article>
+      <table>
+        <tr>
+          <td colspan="5">객체를 배열 안에 넣을 수 있긴 한데 index-value로 저장됨</td>
+        </tr>
+        <tr>
+          <th>이름</th>
+          <th>나이</th>
+          <th>회사</th>
+          <th>역할</th>
+          <th>연차</th>
+        <tr>
+      </table>
+      <p>변수 넣으면 뿌려주는거 만들 수 있을거 같긴 한데 시간 없으니까 스킵</p>
+    </article>
+  </section>
+
+</body>
+
+</html>
+
+
