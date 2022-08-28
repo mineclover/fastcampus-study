@@ -13,6 +13,18 @@ html {
 }
 p {
   line-height: 1.5em;
+  z-index: 0;
+}
+
+a {
+  
+  background-color: #ff3333;
+  padding: 0.1em 0.5em;
+  border-radius: 0.2em;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 1px 1px 4px #ff3333;
 }
 
 section {
@@ -69,8 +81,39 @@ td {
   width: 6rem;
   height: 2rem;
   border: 1px #000 solid;
+  white-space: nowrap;
+  padding: 0 0.5em;
+  /*table 디스플레이에서만 사용됨*/
+  vertical-align: middle;
+}
+td {
+  text-align: center;
+  width: 6rem;
+  height: 2rem;
+  border: 1px #000 solid;
+  white-space: nowrap;
 }
 
 img{
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.section-01_img-01{
+  width: 20vw;
+  
+  float: right;
+  
+}
+
+.section-01_side {
+  width: 20vw auto;
+  float:right;
+}
+
+.section-01_img-01:hover{
+  
+  width: 92vw;
+  float: right;
+  
 }
