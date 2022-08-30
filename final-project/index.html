@@ -6,11 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css"/>
   <link rel="stylesheet" href="./css/main.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
   
-  <title>Document</title>
+  <!--파비콘 만들기 https://hongpage.kr/28-->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/ico/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/ico/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/ico/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/ico/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/ico/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/ico/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>YouTube</title>
 </head>
 <!-- 사용된 구글 머터리얼 아이콘 https://developers.google.com/fonts/docs/material_icons -->
 <!-- https://fonts.google.com/icons?icon.set=Material+Icons -->
@@ -74,11 +91,12 @@
     </div>
     <div class="header__right">
       <button class="" type="button">
-        
-        <span class="material-symbols-outlined">video_call</span>
+        <span class="material-icons-outlined">
+          video_call
+          </span>
       </button>
       <button class="" type="button">
-        <span class="material-symbols-outlined">notifications</span>
+        <span class="material-icons-outlined">notifications</span>
       </button>
       <button class="" type="button"><span class="material-icons">perm_identity</span></button>
     </div>
@@ -93,10 +111,22 @@
           게임
       </li>
       <li class="filter-item">
+        믹스
+      </li>
+      <li class="filter-item">
         음악
       </li>
       <li class="filter-item">
         실시간
+      </li>
+      <li class="filter-item">
+        피트니스
+      </li>
+      <li class="filter-item">
+        액션 어드벤처 게임
+      </li>
+      <li class="filter-item">
+        최근 
       </li>
     </ul>
     <div class="contents">
@@ -116,53 +146,263 @@
           </li>
           <li class="sidebar__nav-item history">
             <button class="">
-              <span class="material-icons">schedule</span>
-              <span>시청기록</span>
+              <span class="material-icons-outlined">explore</span>
+              <span>탐색</span>
             </button>
           </li>
           <li class="sidebar__nav-item history">
             <button class="">
-              <span class="material-icons">subscriptions</span>
+              <svg viewBox="0 0 24 24" 
+              preserveAspectRatio="xMidYMid meet" 
+              focusable="false" class="icon">
+              <g height="24" viewBox="0 0 24 24" width="24" class="style-scope yt-icon">
+                <path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33c-.77-.32-1.2-.5-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86l-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z">
+                </path>
+              </g></svg>
+              <span>shorts</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons-outlined">
+                subscriptions
+                </span>
               <span>구독</span>
             </button>
           </li>
+          <hr>
+          
+          
+
+
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons-outlined">
+                video_library
+                </span>
+              <span>보관함</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">restore</span>
+              <span>시청 기록</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">slideshow</span>
+              <span>내 동영상</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">access_time</span>
+              <span>나중에 볼 동영상</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons-outlined">thumb_up_off_alt</span>
+              <span>좋아요 표시한 영상</span>
+            </button>
+          </li>
+          
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">expand_more</span>
+              <span>더보기</span>
+            </button>
+          </li>
+          <hr>
+          <li class="sidebar__subtitle">구독</li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">restore</span>
+              <span>시청 기록</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">restore</span>
+              <span>시청 기록</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">expand_more</span>
+              <span>3개 더보기</span>
+            </button>
+          </li>
+          <hr>
+          <li class="sidebar__subtitle">탐색</li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons-outlined">theaters</span>
+              <span>영화</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons-outlined">videogame_asset</span>
+              <span>게임</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons-outlined">lightbulb</span>
+              <span>학습</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons-outlined">emoji_events</span>
+              <span>스포츠</span>
+            </button>
+          </li>
+          <hr>
+          <li class="sidebar__subtitle"><B>YOUTUBE</B> 더보기</li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">restore</span>
+              <span>youtube Premium</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">restore</span>
+              <span>크리에이터 스튜디오</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">restore</span>
+              <span>youtube Musice</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">restore</span>
+              <span>youtube Kids</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">restore</span>
+              <span>youtube TV</span>
+            </button>
+          </li>
+          
+          <hr>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons-outlined">settings</span>
+              <span>설정</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons-outlined">flag</span>
+              <span>신고 기록</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons">help_outline</span>
+              <span>고객센터</span>
+            </button>
+          </li>
+          <li class="sidebar__nav-item history">
+            <button class="">
+              <span class="material-icons-outlined">announcement</span>
+              <span>의견 보내기</span>
+            </button>
+          </li>
         </ul>
+        <hr>
+        
       </nav>
-      <div class="sidebar__navbar"></div>
+      
       <!-- 푸터 -->
-      <div>test</div>
-      <footer class="footer">
-        <ul>
-          <li>
-            <a href="#" class="footer__link">회사소개</a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">인재채용</a>
-          </li>
-          <li>
-            <a 
-              href="https://www.youtube.com/t/terms" 
-              class="footer__link"
-            >
-              이용약관
-            </a>
-          </li>
-          <li>
-            <a 
-              href="https://policies.google.com/privacy?hl=ko" 
-              class="footer__link"
-              target="_blank"
-            >
-              개인정보 처리 방침
-            </a>
-          </li>
-          <li>
-            <a href="#" class="footer__link">고객센터</a>
-          </li>
-        </ul>
+      
+      <footer class="sidebar__footer">
+        <a href="#" class="footer__link">정보</a>
+        <a href="#" class="footer__link">보도자료</a>
+        <a href="#" class="footer__link">저작권</a>
+        <br>
+        <a href="#" class="footer__link">문의하기</a>
+        <a href="#" class="footer__link">크리에이터 </a>
+        <a href="#" class="footer__link">광고</a>
+        <br>
+        <a href="#" class="footer__link">개발자</a>
+        <br>
+        <br>
+        <a href="#" class="footer__link">약관 </a>
+        <a href="#" class="footer__link">개인정보처리방침</a>
+        <br>
+        <a href="#" class="footer__link">정책 및 안전</a>
+        <br>
+        <a href="#" class="footer__link"><b>YouTube</b> 작동 원리</a>
+        <br>
+        <a href="#" class="footer__link">새로운 기능 테스트하기</a>
+        <br>
+        <br>
+        <p class="footer__info">© 2022 Google LLC
+          <br>
+          CEO: 선다 피차이 
+            <br>주소: 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.
+            <br> 전화: 080-822-1450(무료)
+        </p>
+        <br>
+        <br>
+        <br>
       </footer>
     </aside>
-    <div class="primary"></div>
+    
+    <div class="primary">
+      
+        <div class="header-area"></div>
+        <!--꺼낼 때는 var 변수명 보고 배열 만들고-->
+        <!--필터링 과정에서 인덱스로 바뀌게 되는 걸 이용한다-->
+        <!-- <div class="ad">
+          <div class="ad__img"><button class="ad-close" onclick="adClose()">X</button></div>
+          
+        </div> -->
+        <section class="primary-area">
+          <article class="content">
+            
+            <img scr="" class="content__img">
+            <div class="video-detail">
+              <div class="thumbnail">
+                <img src="" alt="">
+              </div>
+              <div class="video-info">
+                <a href="영상링크">영상 제목</a>
+                <a href="유튜버 홈링크">유튜버 이름</p><span class="인증">인증 유무</span>
+                <p>조회수·작성일</p>
+              </div>
+            </div>
+          </article>
+          <article class="content">
+            
+            <img scr="" class="content__img">
+            <div class="video info"></div>
+          </article>
+          <article class="content">
+            
+            <img scr="" class="content__img">
+            <div class="video info"></div>
+          </article>
+          <article class="content">
+            
+            <img scr="" class="content__img">
+            <div class="video info"></div>
+          </article>
+        </section>
+    </div>
+  
+
+    
   </main>
   
 </body>
