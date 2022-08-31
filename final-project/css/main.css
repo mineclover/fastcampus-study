@@ -331,10 +331,7 @@ section.section__header {
     font-size: 24px;
   }
   
-.home .primary{
-  background-color: #eee;
-  z-index: 0;
-}
+
   
   .home #home {
     display: block;
@@ -358,7 +355,10 @@ section.section__header {
     padding-bottom: 20px;
   }
 
-  
+  .home .primary{
+    background-color: #eee;
+    z-index: 0;
+  }
   /* home */
   .video-list {
     min-width: 600px;
@@ -387,18 +387,16 @@ section.section__header {
     justify-self: space-between;
     padding: 16px 0;
   }
+a {
+  text-decoration: none;
+}  
+
+
   
-  .video-item__details .profile {
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    margin-right: 8px;
-  }
-  
-  .video-item__meta .title {
+  div.video-info .title {
     font-size: 16px;
-    font-weight: 500;
     margin-bottom: 8px;
+    color: #000;
   }
   
   .video-item__meta .author {
