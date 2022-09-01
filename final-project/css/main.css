@@ -445,7 +445,7 @@ a {
     grid-area: main;
 
     width: 100%;
-    height: 100%;
+    
     margin: 0;
     padding: 0;
     border: 0;
@@ -459,6 +459,7 @@ a {
   display: block;
   width: auto;
   height: 120px;
+
 }
 
   article.content {
@@ -504,7 +505,9 @@ a {
   }
 
 
-
+.hide {
+  display: none;
+}
 
   .content .content__img {
     width: 360px;
@@ -517,7 +520,7 @@ a {
     display: flex;
     justify-content: center;
     
-    height: 100%;
+    
     margin: 1em;
     flex-wrap: wrap ;
   }
