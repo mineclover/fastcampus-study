@@ -24,7 +24,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
+  
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
@@ -33,7 +33,7 @@
 </head>
 <!-- 사용된 구글 머터리얼 아이콘 https://developers.google.com/fonts/docs/material_icons -->
 <!-- https://fonts.google.com/icons?icon.set=Material+Icons -->
-<body onload = 'menuSet("all")'>
+<body onload = 'menuSet("dumi")'>
   <header class="header">
     <div class="header__left">
       <button class="header__sidebutton">
@@ -109,7 +109,7 @@
       <li class="filter-item filter-item--active">
         전체
       </li>
-      <li class="filter-item game" onclick="">
+      <li class="filter-item game" onclick="menuSet('game')">
           게임
       </li>
       <li class="filter-item music">
@@ -378,7 +378,7 @@
     </div>
     <div class="hide">
       <article class="content">
-            
+          비어있음
         <a href="" class="vidio_thumb">
           <img src="" class="content__img">
         </a>

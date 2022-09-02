@@ -59,7 +59,7 @@ li svg.icon {
     height: 60px;
     z-index: 10;
     background-color: #fff;
-    opacity: 0.9;
+    opacity: 0.95;
   }
   
   .header__left {
@@ -506,19 +506,25 @@ a {
     position: relative;
     width: auto;
     display: flex;
-    background-color: yellowgreen;
     justify-content: center;
     
     
   }
 
-  .primary .ad .ad__img {
+  .primary .ad .ad__img{
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: #333;
-    width: 30%;
+    
+    width: 90%;
     height: 240px;
+    background-size: 100% ;
+    background-image: url("/final-project/ad/ad_01.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    
   }
 
 
@@ -528,8 +534,6 @@ a {
     right: 10px;
     width: 30px;
     height: 30px;
-    background-color: violet;
-
   }
 
 

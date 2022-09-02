@@ -19,6 +19,19 @@ game.push({
   live : false
 });
 
+game.push({
+  thumbnail : "dumidata/thummbnail_10.jpg",
+  logo : 'dumidata/logo_11.jpg',
+  title: '소환사의 협곡 나들이',
+  username : '만당만당',
+  contentLink : '#',
+  channelLink : '#',
+  official : true,
+  view : '조회수 3.4만회·',
+  created : '3일전',
+  live : false
+});
+
 
 edu.push ({
   thumbnail : 'dumidata/thummbnail_06.jpg',
@@ -234,3 +247,4 @@ function videoRandomGen(num){
 
   }
 }
+videoRandomGen(12)

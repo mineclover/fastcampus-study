@@ -17,10 +17,15 @@ function videoContainerGen(num){
 }
 
 function menuSet(name){
-  let area = document.querySelector('.primary-area').innerHTML = '';
-  videoContainerGen(12);
-  contentSelector(name);
+  let area = document.querySelector('.primary-area');
 
+  area.innerHTML  = '';
+  
+  let charText = name +`.length`
+  console.log(charText);
+  videoContainerGen(eval(charText));
+  contentSelector(name);
+  
 }
 
 function contentSelector(name){
@@ -30,19 +35,20 @@ function contentSelector(name){
   console.log(list[0]);
   
   
-  if(name == 'all'){
+  if(name == 'dumi'){
     for(let i = 0;i <list.length;i++){
       videoGenerator(list[i],dumiGen(i));
     }
   }
   else if('game'){
+
     for(let i = 0;i <list.length;i++){
       if (i < game.length){
         videoGenerator(list[i],game[i]);
       }
-      else {
-        videoGenerator(list[i],dumiGen(i));
-      }
+      // else {
+      //   videoGenerator(list[i],dumiGen(i));
+      // }
     }
   }
 }
@@ -79,4 +85,9 @@ function videoGenerator(element,object) {
   // console.log(object.view);
   // console.log(object.created);
   // console.log(object.live);
+}
+
+
+function adClose() {
+  document.querySelector('.primary .ad .ad__img').style.display = 'none';
 }
