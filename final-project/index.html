@@ -33,7 +33,7 @@
 </head>
 <!-- 사용된 구글 머터리얼 아이콘 https://developers.google.com/fonts/docs/material_icons -->
 <!-- https://fonts.google.com/icons?icon.set=Material+Icons -->
-<body>
+<body onload = 'menuSet("all")'>
   <header class="header">
     <div class="header__left">
       <button class="header__sidebutton">
@@ -366,35 +366,13 @@
         <div class="header-area"></div>
         <!--꺼낼 때는 var 변수명 보고 배열 만들고-->
         <!--필터링 과정에서 인덱스로 바뀌게 되는 걸 이용한다-->
-        <!-- <div class="ad">
+        <div class="ad">
           <div class="ad__img"><button class="ad-close" onclick="adClose()">X</button></div>
           
-        </div> -->
+        </div>
         <section class="primary-area">
-          <article class="content">
-            
-            <a href="" class="vidio_thumb">
-              <img src="data/green.jpg" class="content__img">
-            </a>
-            <div class="video-detail">
-              <div class="thumbnail">
-                <img src="" class="content__logo">
-              </div>
-              <div class="video-info">
-                
-                  <a href="영상링크" class="content__title">제목</a>
-                
-                
-                <br>
-                <a href="유튜버 홈링크" class="content__user">유튜버 이름</a><span class="material-icons official">
-                  check_circle
-                  </span>
-                <p class="content__info">조회수·작성일</p>
-                <img src="img\livestick.png" class="content__live">
-                
-              </div>
-            </div>
-          </article>
+          
+          <!--영상 생성 영역-->
           
         </section>
     </div>

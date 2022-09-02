@@ -8,7 +8,7 @@ function videoElement(){
   setArea.appendChild(copyContent);
 }
 
-function videoContent(num){
+function videoContainerGen(num){
   let i = 0
   while(i < num){
     videoElement();
@@ -16,18 +16,38 @@ function videoContent(num){
   }
 }
 
-function contentSelector(){
+function menuSet(name){
+  let area = document.querySelector('.primary-area').innerHTML = '';
+  videoContainerGen(12);
+  contentSelector(name);
+
+}
+
+function contentSelector(name){
   var list = document.querySelectorAll('.primary-area article.content');
   console.log(list.length);
 
   console.log(list[0]);
   
   
-
-  for(let i = 0;i <list.length;i++ ){
-    videoGenerator(list[i],dumiGen(i));
-  }  
+  if(name == 'all'){
+    for(let i = 0;i <list.length;i++){
+      videoGenerator(list[i],dumiGen(i));
+    }
+  }
+  else if('game'){
+    for(let i = 0;i <list.length;i++){
+      if (i < game.length){
+        videoGenerator(list[i],game[i]);
+      }
+      else {
+        videoGenerator(list[i],dumiGen(i));
+      }
+    }
+  }
 }
+
+
 function dumiGen(i){
 
   while (i >= dumi.length){
