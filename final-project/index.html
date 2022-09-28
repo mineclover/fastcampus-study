@@ -33,7 +33,7 @@
 </head>
 <!-- 사용된 구글 머터리얼 아이콘 https://developers.google.com/fonts/docs/material_icons -->
 <!-- https://fonts.google.com/icons?icon.set=Material+Icons -->
-<body onload = 'menuSet("dumi")'>
+<body onload = 'onHtml()'>
   <header class="header">
     <div class="header__left">
       <button class="header__sidebutton">
@@ -106,30 +106,30 @@
   </header>
   <section class="section__header">
     <ul class="filter-items">
-      <li class="filter-item filter-item--active">
+      <li class="filter-item dumi filter-item--active" onclick="menuSet('dumi')">
         전체
       </li>
       <li class="filter-item game" onclick="menuSet('game')">
           게임
       </li>
-      <li class="filter-item music">
+      <li class="filter-item music" onclick="menuSet('music')">
         음악
       </li>
-      <li class="filter-item live">
+      <!-- <li class="filter-item live" onclick="menuSet('live')">
         실시간
-      </li>
-      <li class="filter-item pit">
+      </li> -->
+      <li class="filter-item pit" onclick="menuSet('pit')">
         피트니스
       </li>
-      <li class="filter-item edu">
+      <li class="filter-item edu" onclick="menuSet('edu')">
         교육
       </li>
-      <li class="filter-item code">
+      <li class="filter-item coding" onclick="menuSet('coding')">
         코딩
       </li>
-      <li class="filter-item recently">
+      <!-- <li class="filter-item recently" onclick="menuSet('recently')">
         최근에 업로드된 동영상
-      </li>
+      </li> -->
     </ul>
     <div class="contents">
       
@@ -375,10 +375,15 @@
           <!--영상 생성 영역-->
           
         </section>
+        <div class="extend-area" onclick="extendLoad()">
+          계속 보기
+          <!--자동 실패함 제이쿼리 예제밖에 없음..-->
+        </div>
     </div>
+    
     <div class="hide">
       <article class="content">
-          비어있음
+          
         <a href="" class="vidio_thumb">
           <img src="" class="content__img">
         </a>
@@ -396,7 +401,7 @@
               check_circle
               </span>
             <p class="content__info">조회수·작성일</p>
-            <img src="" class="content__live">
+            <img src="img/livestick.png" class="content__live">
             
           </div>
         </div>

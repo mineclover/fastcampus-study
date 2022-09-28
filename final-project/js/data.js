@@ -1,7 +1,7 @@
 var game = [];
 var edu = [];
 var music = [];
-var code = [];
+var coding = [];
 var pit = [];
 var dumi = [];
 
@@ -41,7 +41,7 @@ edu.push ({
   contentLink : '#',
   channelLink : '#',
   official : true,
-  view : '5.3명 시청중',
+  view : '5.3만명 시청중',
   created : '',
   live : true
 });
@@ -95,7 +95,7 @@ music.push ( {
   official : false,
   view : '조회수 4.6만회',
   created : '',
-  live : true
+  live : false
 });
 
 pit.push ( {
@@ -125,7 +125,7 @@ pit.push({
 });
 
 
-code.push( {
+coding.push( {
   thumbnail : 'dumidata/thummbnail_28.jpg',
   logo : 'dumidata/logo_25.jpg',
   title: 'IT 인재가 되기 위한 101가지',
@@ -138,7 +138,7 @@ code.push( {
   live : false
 });
 
-code.push( {
+coding.push( {
   thumbnail : 'dumidata/thummbnail_22.jpg',
   logo : 'dumidata/logo_16.jpg',
   title: '야너두 할 수 있다! 파이썬 업무 자동화',
@@ -151,20 +151,27 @@ code.push( {
   live : false
 });
 
-code.push({
+coding.push({
   thumbnail : 'dumidata/thummbnail_22.jpg',
+  
   logo : 'dumidata/logo_16.jpg',
+  
+  
   title: '야너두 할 수 있다! 파이썬 업무 자동화-02',
+  
   username : '너두코딩',
   contentLink : '#',
   channelLink : '#',
   official : false,
-  view : '조회수 3.3만회·',
+  
+  
+  view : '조회수 3001회·',
   created : '1년전',
+  
   live : false
 });
 
-code.push({
+coding.push({
   thumbnail : 'dumidata/thummbnail_14.jpg',
   logo : 'dumidata/logo_16.jpg',
   title: '고마워 과거의 나! 특집 파이썬 특강',
@@ -177,7 +184,7 @@ code.push({
   live : false
 });
 
-code.push({
+coding.push({
   thumbnail : 'dumidata/thummbnail_14.jpg',
   logo : 'dumidata/logo_16.jpg',
   title: '신입이니? 이거 공부해와! 파이썬 업무 자동화-01',
@@ -190,6 +197,9 @@ code.push({
   live : false
 });
 
+//사진 번호에 이름 따라올건데.. 그거 적용해도 되지 않을까
+var logoName = ['','빨강','주황','연두','초록','하늘','파랑','보라','보라보라','웃긴댓글','예쁜누나','만당','피지컬갤러리','ONLINE Tutorials','스티부','제페토 안경','나도 코딩','흰머리주황눈','헤이스트','인프런','EO','키리','조코딩','회색머리 별눈','잡상싱','돈좋아','비디오 에디터','후론투','투더제이','메켓','플레이리스트','덕양소','짐코딩','구글휴먼'];
+//나머지도 하면될거같ㄷ..ㅏ.. 으어..
 
 function videoRandomGen(num){
 
@@ -207,9 +217,10 @@ function videoRandomGen(num){
     randomNum[1] =  '' + randomNum[1];
     randomNum[1] = randomNum[1].padStart(2,'0');
 
-    randomNum.push(Boolean(Math.floor(Math.random()*2)));
+    randomNum.push(Boolean(Math.floor(Math.random()*4)));
     //floor 가 잘 안되서 round 로 바꿈 다시 floor로 돌림
-    //official 랜덤
+    //official 랜덤 숫자 높을 수록 확률 증가
+    //삼항 연산자는 값 ? 참 : 거짓
     console.log(randomNum[2]);
     
       console.log(randomNum[2]);
@@ -217,7 +228,7 @@ function videoRandomGen(num){
         thumbnail : `dumidata/thummbnail_${randomNum[0]}.jpg`,
         logo : `dumidata/logo_${randomNum[1]}.jpg`,
         title: `아무 컨텐츠_0${dumi.length}`,
-        username : `user_0${dumi.length}`,
+        username : `${logoName[parseInt(randomNum[1])]}_0${dumi.length}`,
         contentLink : '#',
         channelLink : '#',
         official : randomNum[2],
@@ -226,6 +237,7 @@ function videoRandomGen(num){
         live : false
       });
       
+    
     
     // else if(name == 'music') {
       

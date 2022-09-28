@@ -1,7 +1,20 @@
 :root {
   --side-menu-width : 240px;
+  overflow-y: scroll;
+  
 }
-
+:root::-webkit-scrollbar {
+  width: 10px;
+}
+:root:hover::-webkit-scrollbar-thumb {
+  background-color: #777;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+:root::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255);
+  padding: 2px;
+}
 
 
 
@@ -260,6 +273,10 @@ section.section__header {
     z-index: 199;
   }
 /*스크롤바 스타일 https://codingbroker.tistory.com/66*/
+  
+
+  
+
   .sidebar::-webkit-scrollbar {
     width: 10px;
   }
@@ -272,7 +289,6 @@ section.section__header {
     background-color: rgb(255, 255, 255);
     padding: 2px;
   }
-  
 
 
   .sidebar li{
@@ -552,7 +568,7 @@ a {
     display: flex;
     justify-content: center;
     
-    
+  
     margin: 1em;
     flex-wrap: wrap ;
 
@@ -574,4 +590,16 @@ a {
 .content__logo {
   border-radius: 50%;
   border: none rgba(0, 0, 0, 0);
+}
+
+.extend-area {
+  text-align: center;
+  width: 100%;
+  background-color: antiquewhite;
+  cursor: pointer;
+  padding: 10px;
+}
+.extend-area:hover {
+  background-color: #333;
+  color: #fff;
 }
